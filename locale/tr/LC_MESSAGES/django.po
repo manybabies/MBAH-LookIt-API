@@ -2,19 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MBAH_studiespage\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-15 17:00+0200\n"
+"POT-Creation-Date: 2022-07-21 11:32-0400\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
 
-#: accounts/forms.py:58
+#: accounts/forms.py:55
 msgid "Enter a valid 6-digit one-time password from Google Authenticator"
 msgstr ""
 "Google Authenticator'dan 6 basamaklı geçerli bir tek kullanımlık şifre girin"
 
-#: accounts/forms.py:109
+#: accounts/forms.py:106
 #, fuzzy, python-format
 #| msgid ""
 #| "Please enter a correct %(username)s and password. Note that email and "
@@ -32,46 +32,29 @@ msgstr ""
 "kimlik doğrulamayı açtıysanız, Google Authenticator'dan tek kullanımlık bir "
 "şifreye (OTP kodu) de ihtiyaç duyacaksınız. "
 
-#: accounts/forms.py:114
+#: accounts/forms.py:111
 msgid "This account is inactive."
 msgstr "Bu hesap aktif değil."
 
-#: accounts/forms.py:197
-msgid "Your password can’t be too similar to your other personal information."
-msgstr "Şifreniz diğer kişisel bilgilerinizle çok benzer olamaz. "
-
-#: accounts/forms.py:198
-msgid "Your password must contain at least 16 characters."
-msgstr "Şifreniz en az 16 karakter içermelidir."
-
-#: accounts/forms.py:199
-msgid "Your password can’t be a commonly used password."
-msgstr "Şifreniz sık kullanılan bir şifre olamaz."
-
-#: accounts/forms.py:200
-msgid "Your password can’t be entirely numeric."
-msgstr "Şifreniz tamamen sayısal olamaz."
-
-#: accounts/forms.py:216 accounts/forms.py:232 accounts/models.py:141
+#: accounts/forms.py:199 accounts/forms.py:215
 msgid "Email address"
 msgstr "Email adresi"
 
-#: accounts/forms.py:217 accounts/models.py:146
-#: accounts/templates/accounts/participant_list.html:37
-#: accounts/templates/accounts/participant_list.html:58
+#: accounts/forms.py:200 accounts/templates/accounts/participant_list.html:46
+#: accounts/templates/accounts/participant_list.html:81
 msgid "Nickname"
 msgstr "Takma ad"
 
-#: accounts/forms.py:257
+#: accounts/forms.py:240
 msgid ""
 "It's time for another session of a study we are currently participating in"
 msgstr "Şu anda katıldığımız çalışmanın başka bir oturumunun zamanı geldi"
 
-#: accounts/forms.py:259
+#: accounts/forms.py:242
 msgid "A new study is available for one of my children"
 msgstr "Çocuklarımdan biri için uygun olan yeni bir çalışma var"
 
-#: accounts/forms.py:261
+#: accounts/forms.py:244
 msgid ""
 "There's an update about a study we participated in (for example, results are "
 "published)"
@@ -79,7 +62,7 @@ msgstr ""
 "Katıldığımız bir çalışma ile ilgili bir gelişme mevcut(örneğin, sonuçlar "
 "yayınlandı)"
 
-#: accounts/forms.py:264
+#: accounts/forms.py:247
 msgid ""
 "A researcher has questions about my individual responses (for example, if I "
 "report a technical problem during the study)"
@@ -87,100 +70,84 @@ msgstr ""
 "Araştırmacının bireysel yanıtlarımla ilgili soruları var (örneğin, çalışma "
 "esnasında teknik bir problemi rapor edersem)"
 
-#: accounts/forms.py:273 accounts/forms.py:322
-msgid "What category(ies) does your family identify as?"
-msgstr "Hangi kategori(ler) ailenizi tanımlıyor?"
-
-#: accounts/forms.py:277 accounts/models.py:527
-#: accounts/templates/accounts/participant_detail.html:86
-msgid "Country"
-msgstr "Ülke"
-
-#: accounts/forms.py:304
+#: accounts/forms.py:277
 msgid "Enter as a comma-separated list: YYYY-MM-DD, YYYY-MM-DD, ..."
 msgstr "Virgülle ayrılmış listeyi giriniz: YYYY-AA-GG, YYYY-AA-GG, ..."
 
-#: accounts/forms.py:306
-msgid "Numerical answers only - a rough guess is fine!"
-msgstr "Yalnızca sayısal cevaplar- kabaca bir tahmin uygundur!"
+#: accounts/forms.py:280
+msgid ""
+"If the answer varies or needs more explanation, you can tell us more below."
+msgstr ""
 
-#: accounts/forms.py:310
+#: accounts/forms.py:283
+msgid ""
+"Please select the appropriate responses for everyone in your children's "
+"immediate family."
+msgstr ""
+
+#: accounts/forms.py:288
 msgid "What country do you live in?"
 msgstr "Hangi ülkede yaşıyorsunuz?"
 
-#: accounts/forms.py:311
+#: accounts/forms.py:289
 msgid "What state do you live in?"
 msgstr "Hangi ilde yaşıyorsunuz?"
 
-#: accounts/forms.py:312
+#: accounts/forms.py:290
 msgid "How would you describe the area where you live?"
 msgstr "Yaşadığınız bölgeyi nasıl tanımlarsınız?"
 
-#: accounts/forms.py:314
-msgid "What language(s) does your family speak at home?"
-msgstr "Aileniz evinizde hangi dil(ler)i konuşuyor?"
-
-#: accounts/forms.py:316
+#: accounts/forms.py:291
 msgid "How many children do you have?"
 msgstr "Kaç tane çocuğunuz var?"
 
-#: accounts/forms.py:317
+#: accounts/forms.py:292
 msgid "For each child, please enter his or her birthdate:"
 msgstr "Lütfen her bir çocuğunuzun doğum tarihini girin: "
 
-#: accounts/forms.py:319
+#: accounts/forms.py:294
 msgid "How many parents/guardians do your children live with?"
 msgstr "Çocuğunuz kaç ebeveyn/bakıcı ile birlikte yaşıyor?"
 
-#: accounts/forms.py:324
+#: accounts/forms.py:296
 msgid "What is your age?"
 msgstr "Yaşınız kaç?"
 
-#: accounts/forms.py:325
+#: accounts/forms.py:297
 msgid "What is your gender?"
 msgstr "Cinsiyetiniz nedir?"
 
-#: accounts/forms.py:327
+#: accounts/forms.py:299
 msgid "What is the highest level of education you've completed?"
 msgstr "Tamamladığınız en yüksek eğitim seviyesi nedir?"
 
-#: accounts/forms.py:330
-msgid "What is the highest level of education your spouse has completed?"
-msgstr "Eşinizin tamamladığı en yüksek eğitim seviyesi nedir?"
-
-#: accounts/forms.py:333
+#: accounts/forms.py:302
 msgid "What is your approximate family yearly income (in US dollars)?"
 msgstr "Ailenizin yıllık geliri ortalama ne kadar (Türk Lirası)?"
 
-#: accounts/forms.py:336
-msgid "About how many children's books are there in your home?"
-msgstr "Evinizde tahmini kaç tane çocuk kitabı var?"
-
-#: accounts/forms.py:338
+#: accounts/forms.py:304
 msgid "Anything else you'd like us to know?"
 msgstr "Bilmemizi istediğiniz başka bir şey var mı?"
 
-#: accounts/forms.py:339
+#: accounts/forms.py:305
 msgid "How did you hear about Lookit?"
 msgstr "Lookit'den nasıl haberdar oldunuz?"
 
-#: accounts/forms.py:341
-msgid ""
-"If the answer varies due to shared custody arrangements or travel, please "
-"enter the number of parents/guardians your children are usually living with "
-"or explain."
+#: accounts/forms.py:307
+msgid "Which of the following best describes your family?"
 msgstr ""
-"Eğer cevabınız ortak velayet düzenlemelerine veya seyahatlere göre "
-"değişiyorsa, lütfen çocuğunuzun genellikle birlikte yaşadığı ebeveyn/bakıcı "
-"sayısını belirtin veya açıklayın."
 
-#: accounts/forms.py:356 accounts/forms.py:382 accounts/forms.py:434
-#: accounts/templates/accounts/participant_detail.html:38
-#: web/templates/web/children-list.html:112
-msgid "Birthday"
-msgstr "Doğum tarihi"
+#: accounts/forms.py:310
+#, fuzzy
+#| msgid "Another race, ethnicity, or origin"
+msgid "Share more about your family's race, ethnicity, or origin:"
+msgstr "Başka bir ırk, etnisite veya köken"
 
-#: accounts/forms.py:358
+#: accounts/forms.py:313
+msgid "Share more about your children's parents/guardians:"
+msgstr ""
+
+#: accounts/forms.py:332
 msgid ""
 "This lets us figure out exactly how old your child is when they participate "
 "in a study. We never publish children's birthdates or information that would "
@@ -190,39 +157,45 @@ msgstr ""
 "anlamamızı sağlar. Çocukların doğum tarihlerini veya okuyucunun doğum "
 "tarihini hesaplamasını sağlayacak bilgileri asla yayınlamayız."
 
-#: accounts/forms.py:365
+#: accounts/forms.py:339
 msgid "Birthdays cannot be in the future."
 msgstr "Doğum tarihi gelecek bir zamanda olamaz."
 
-#: accounts/forms.py:381 accounts/forms.py:433
+#: accounts/forms.py:356 accounts/forms.py:412
 msgid "First Name"
 msgstr "İsim"
 
-#: accounts/forms.py:383 accounts/forms.py:435
-#: accounts/templates/accounts/participant_detail.html:54
+#: accounts/forms.py:357 accounts/forms.py:413
+#: accounts/templates/accounts/participant_detail.html:53
+#: web/templates/web/children-list.html:44
+msgid "Birthday"
+msgstr "Doğum tarihi"
+
+#: accounts/forms.py:358 accounts/forms.py:414
+#: accounts/templates/accounts/participant_detail.html:65
 msgid "Gender"
 msgstr "Cinsiyet"
 
-#: accounts/forms.py:384 accounts/forms.py:436
-#: accounts/templates/accounts/participant_detail.html:62
+#: accounts/forms.py:359 accounts/forms.py:415
+#: accounts/templates/accounts/participant_detail.html:71
 msgid "Gestational Age at Birth"
 msgstr "Doğum Haftası"
 
-#: accounts/forms.py:386 accounts/forms.py:438
+#: accounts/forms.py:361 accounts/forms.py:417
 msgid "Any additional information you'd like us to know"
 msgstr "Bilmemizi istediğiniz başka ek bilgi"
 
-#: accounts/forms.py:388 accounts/forms.py:440
+#: accounts/forms.py:363 accounts/forms.py:419
 msgid "Characteristics and conditions"
 msgstr "Özellikler ve şartlar"
 
-#: accounts/forms.py:390 accounts/forms.py:442
+#: accounts/forms.py:365 accounts/forms.py:421
 msgid ""
 "Languages this child is exposed to at home, school, or with another "
 "caregiver."
 msgstr "Bu çocuğun evde, okulda veya başka bir bakıcıdan maruz kaldığı diller."
 
-#: accounts/forms.py:396 accounts/forms.py:448
+#: accounts/forms.py:371 accounts/forms.py:427
 msgid ""
 "This lets you select the correct child to participate in a particular study. "
 "A nickname or initials are fine! We may include your child's name in email "
@@ -234,511 +207,592 @@ msgstr ""
 "emaile ekleyebiliriz (örneğin, \"Merve için uygun olan yeni bir çalışma var!"
 "\") ama isimleri asla yayınlamayız veya araştırmalarımızda kullanmayız."
 
-#: accounts/forms.py:399 accounts/forms.py:451
+#: accounts/forms.py:374 accounts/forms.py:430
 msgid ""
 "For instance, diagnosed developmental disorders or vision or hearing problems"
 msgstr ""
 "Örneğin, tanı almış gelişimsel bozukluklar ya da görme veya işitme "
 "problemleri"
 
-#: accounts/forms.py:402
+#: accounts/forms.py:377
 msgid "Please round down to the nearest full week of pregnancy completed"
 msgstr "Lütfen hamilelik haftasını tamamlanan en yakın tam haftaya yuvarlayın"
 
+#: accounts/forms.py:380 accounts/forms.py:433
+msgid ""
+"Most research studies are designed for a general age range, but some focus "
+"on a particular group of children. The choices you make below are used to "
+"show you studies that are designed for children with these characteristics."
+msgstr ""
+
+#: accounts/forms.py:456
+#, fuzzy
+#| msgid "Studies"
+msgid "All studies"
+msgstr "Çalışmalar"
+
+#: accounts/forms.py:457
+msgid "Studies happening right now"
+msgstr ""
+
+#: accounts/forms.py:458
+#, fuzzy
+#| msgid "Current studies"
+msgid "Scheduled studies"
+msgstr "Mevcut çalışmalar"
+
+#: accounts/forms.py:461
+msgid "Find studies for..."
+msgstr ""
+
+#: accounts/forms.py:462
+msgid "babies (under 1)"
+msgstr ""
+
+#: accounts/forms.py:463
+msgid "toddlers (1-2)"
+msgstr ""
+
+#: accounts/forms.py:464
+msgid "preschoolers (3-4)"
+msgstr ""
+
+#: accounts/forms.py:465
+msgid "school-age kids (5-17)"
+msgstr ""
+
+#: accounts/forms.py:466
+msgid "adults (18+)"
+msgstr ""
+
+#: accounts/forms.py:469
+msgid "Show studies that are..."
+msgstr ""
+
+#: accounts/forms.py:470
+msgid "...happening on Lookit"
+msgstr ""
+
+#: accounts/forms.py:471
+msgid "...happening on other websites"
+msgstr ""
+
+#: accounts/forms.py:476
+msgid "Hide Studies We've Done"
+msgstr ""
+
+#: accounts/forms.py:515
+#, fuzzy
+#| msgid "Your past studies"
+msgid "Lookit studies"
+msgstr "Geçmiş çalışmalarınız"
+
+#: accounts/forms.py:516
+#, fuzzy
+#| msgid "Current studies"
+msgid "External studies"
+msgstr "Mevcut çalışmalar"
+
 #: accounts/migrations/0041_add_existing_conditions.py:12
-#: accounts/models.py:302 studies/fields.py:135
+#: accounts/models.py:313 studies/fields.py:135
 msgid "Not sure or prefer not to answer"
 msgstr "Emin değilim veya cevap vermemeyi tercih ediyorum"
 
 #: accounts/migrations/0041_add_existing_conditions.py:13
-#: accounts/models.py:303 studies/fields.py:136
+#: accounts/models.py:314 studies/fields.py:136
 msgid "Under 24 weeks"
 msgstr "24 haftanın altında"
 
 #: accounts/migrations/0041_add_existing_conditions.py:14
-#: accounts/models.py:304 studies/fields.py:137
+#: accounts/models.py:315 studies/fields.py:137
 msgid "24 weeks"
 msgstr "24 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:15
-#: accounts/models.py:305 studies/fields.py:138
+#: accounts/models.py:316 studies/fields.py:138
 msgid "25 weeks"
 msgstr "25 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:16
-#: accounts/models.py:306 studies/fields.py:139
+#: accounts/models.py:317 studies/fields.py:139
 msgid "26 weeks"
 msgstr "26 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:17
-#: accounts/models.py:307 studies/fields.py:140
+#: accounts/models.py:318 studies/fields.py:140
 msgid "27 weeks"
 msgstr "27 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:18
-#: accounts/models.py:308 studies/fields.py:141
+#: accounts/models.py:319 studies/fields.py:141
 msgid "28 weeks"
 msgstr "28 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:19
-#: accounts/models.py:309 studies/fields.py:142
+#: accounts/models.py:320 studies/fields.py:142
 msgid "29 weeks"
 msgstr "29 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:20
-#: accounts/models.py:310 studies/fields.py:143
+#: accounts/models.py:321 studies/fields.py:143
 msgid "30 weeks"
 msgstr "30 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:21
-#: accounts/models.py:311 studies/fields.py:144
+#: accounts/models.py:322 studies/fields.py:144
 msgid "31 weeks"
 msgstr "31 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:22
-#: accounts/models.py:312 studies/fields.py:145
+#: accounts/models.py:323 studies/fields.py:145
 msgid "32 weeks"
 msgstr "32 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:23
-#: accounts/models.py:313 studies/fields.py:146
+#: accounts/models.py:324 studies/fields.py:146
 msgid "33 weeks"
 msgstr "33 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:24
-#: accounts/models.py:314 studies/fields.py:147
+#: accounts/models.py:325 studies/fields.py:147
 msgid "34 weeks"
 msgstr "34 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:25
-#: accounts/models.py:315 studies/fields.py:148
+#: accounts/models.py:326 studies/fields.py:148
 msgid "35 weeks"
 msgstr "35 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:26
-#: accounts/models.py:316 studies/fields.py:149
+#: accounts/models.py:327 studies/fields.py:149
 msgid "36 weeks"
 msgstr "36 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:27
-#: accounts/models.py:317 studies/fields.py:150
+#: accounts/models.py:328 studies/fields.py:150
 msgid "37 weeks"
 msgstr "37 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:28
-#: accounts/models.py:318 studies/fields.py:151
+#: accounts/models.py:329 studies/fields.py:151
 msgid "38 weeks"
 msgstr "38 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:29
-#: accounts/models.py:319 studies/fields.py:152
+#: accounts/models.py:330 studies/fields.py:152
 msgid "39 weeks"
 msgstr "39 hafta"
 
 #: accounts/migrations/0041_add_existing_conditions.py:30
-#: accounts/models.py:320 studies/fields.py:153
+#: accounts/models.py:331 studies/fields.py:153
 msgid "40 or more weeks"
 msgstr "40 veya daha fazla hafta"
 
-#: accounts/models.py:80
-msgid "Can View Organization"
-msgstr "Organizasyonu Görüntüleyebilir"
-
-#: accounts/models.py:81
-msgid "Can Edit Organization"
-msgstr "Organizasyonu Düzenleyebilir"
-
-#: accounts/models.py:82
-msgid "Can Create Organization"
-msgstr "Organizasyon Oluşturabilir"
-
-#: accounts/models.py:83
-msgid "Can Remove Organization"
-msgstr "Organizasyonu Kaldırabilir"
-
-#: accounts/models.py:84
-msgid "Can View Experimenter"
-msgstr "Deneyciyi Görüntüleyebilir"
-
-#: accounts/models.py:85
-msgid "Can View Analytics"
-msgstr "Analitikleri Görüntüleyebilir"
-
-#: accounts/models.py:280
-msgid "Can Create User"
-msgstr "Kullanıcı Yaratabilir"
-
-#: accounts/models.py:281
-msgid "Can View User"
-msgstr "Kullanıcı Görüntüleyebilir"
-
-#: accounts/models.py:282
-msgid "Can Edit User"
-msgstr "Kullanıcıyı Düzenleyebilir"
-
-#: accounts/models.py:283
-msgid "Can Remove User"
-msgstr "Kullanıcıyı Kaldırabilir"
-
-#: accounts/models.py:284
-msgid "Can View User Permissions"
-msgstr "Kullanıcı İzinlerini Görüntüleyebilir"
-
-#: accounts/models.py:285
-msgid "Can Edit User Permissions"
-msgstr "Kullanıcı İzinlerini Düzenleyebilir"
-
-#: accounts/models.py:286
-msgid "Can Read All User Data"
-msgstr "Bütün Kullanıcıların Verilerini Okuyabilir"
-
-#: accounts/models.py:287
-msgid "Can Read User Usernames"
-msgstr "Kullanıcıların Kullanıcı adlarını Okuyabilir"
-
-#: accounts/models.py:294 accounts/models.py:397
+#: accounts/models.py:43
 msgid "male"
 msgstr "erkek"
 
-#: accounts/models.py:295 accounts/models.py:398
+#: accounts/models.py:44
 msgid "female"
 msgstr "kadın"
 
-#: accounts/models.py:296 accounts/models.py:399
-msgid "other"
-msgstr "diğer"
+#: accounts/models.py:45
+msgid "open response"
+msgstr ""
 
-#: accounts/models.py:297 accounts/models.py:400 accounts/models.py:476
+#: accounts/models.py:46 accounts/models.py:484
 msgid "prefer not to answer"
 msgstr "cevaplamamayı tercih ediyorum"
 
-#: accounts/models.py:387
+#: accounts/models.py:85
+msgid "Can View Organization"
+msgstr "Organizasyonu Görüntüleyebilir"
+
+#: accounts/models.py:86
+msgid "Can Edit Organization"
+msgstr "Organizasyonu Düzenleyebilir"
+
+#: accounts/models.py:87
+msgid "Can Create Organization"
+msgstr "Organizasyon Oluşturabilir"
+
+#: accounts/models.py:88
+msgid "Can Remove Organization"
+msgstr "Organizasyonu Kaldırabilir"
+
+#: accounts/models.py:89
+msgid "Can View Experimenter"
+msgstr "Deneyciyi Görüntüleyebilir"
+
+#: accounts/models.py:90
+msgid "Can View Analytics"
+msgstr "Analitikleri Görüntüleyebilir"
+
+#: accounts/models.py:298
+msgid "Can Create User"
+msgstr "Kullanıcı Yaratabilir"
+
+#: accounts/models.py:299
+msgid "Can View User"
+msgstr "Kullanıcı Görüntüleyebilir"
+
+#: accounts/models.py:300
+msgid "Can Edit User"
+msgstr "Kullanıcıyı Düzenleyebilir"
+
+#: accounts/models.py:301
+msgid "Can Remove User"
+msgstr "Kullanıcıyı Kaldırabilir"
+
+#: accounts/models.py:302
+msgid "Can View User Permissions"
+msgstr "Kullanıcı İzinlerini Görüntüleyebilir"
+
+#: accounts/models.py:303
+msgid "Can Edit User Permissions"
+msgstr "Kullanıcı İzinlerini Düzenleyebilir"
+
+#: accounts/models.py:304
+msgid "Can Read All User Data"
+msgstr "Bütün Kullanıcıların Verilerini Okuyabilir"
+
+#: accounts/models.py:305
+msgid "Can Read User Usernames"
+msgstr "Kullanıcıların Kullanıcı adlarını Okuyabilir"
+
+#: accounts/models.py:399
 msgid "White"
 msgstr "Beyaz"
 
-#: accounts/models.py:388
+#: accounts/models.py:400
 msgid "Hispanic, Latino, or Spanish origin"
 msgstr "Hispanik, Latin veya İspanyol kökenli"
 
-#: accounts/models.py:389
+#: accounts/models.py:401
 msgid "Black or African American"
 msgstr "Siyahi veya Afrikalı Amerikalı"
 
-#: accounts/models.py:390
+#: accounts/models.py:402
 msgid "Asian"
 msgstr "Asyalı"
 
-#: accounts/models.py:391
+#: accounts/models.py:403
 msgid "American Indian or Alaska Native"
 msgstr "Amerikan Yerlisi veya Alaska Yerlisi"
 
-#: accounts/models.py:392
+#: accounts/models.py:404
 msgid "Middle Eastern or North African"
 msgstr "Orta Doğulu veya Kuzey Afrikalı"
 
-#: accounts/models.py:393
+#: accounts/models.py:405
 msgid "Native Hawaiian or Other Pacific Islander"
 msgstr "Hawaiian Yerlisi veya Diğer Pasifik Adasından"
 
-#: accounts/models.py:394
+#: accounts/models.py:406
 msgid "Another race, ethnicity, or origin"
 msgstr "Başka bir ırk, etnisite veya köken"
 
-#: accounts/models.py:403 accounts/models.py:412
+#: accounts/models.py:409 accounts/models.py:418
 msgid "some or attending high school"
 msgstr "Lise terk veya lise öğrencisi"
 
-#: accounts/models.py:404 accounts/models.py:413
+#: accounts/models.py:410 accounts/models.py:419
 msgid "high school diploma or GED"
 msgstr "Lise diploması veya muadili"
 
-#: accounts/models.py:405 accounts/models.py:414
+#: accounts/models.py:411 accounts/models.py:420
 msgid "some or attending college"
 msgstr "Üniversite terk veya üniversite öğrencisi"
 
-#: accounts/models.py:406 accounts/models.py:415
+#: accounts/models.py:412 accounts/models.py:421
 msgid "2-year college degree"
 msgstr "İki yıllık üniversite mezunu"
 
-#: accounts/models.py:407 accounts/models.py:416
+#: accounts/models.py:413 accounts/models.py:422
 msgid "4-year college degree"
 msgstr "Dört yıllık üniversite mezunu"
 
-#: accounts/models.py:408 accounts/models.py:417
+#: accounts/models.py:414 accounts/models.py:423
 msgid "some or attending graduate or professional school"
 msgstr "Yüksek lisans veya meslek yüksekokulu terk veya öğrencisi"
 
-#: accounts/models.py:409 accounts/models.py:418
+#: accounts/models.py:415 accounts/models.py:424
 msgid "graduate or professional degree"
 msgstr "Yüksek lisans veya meslek yüksekokulu mezunu"
 
-#: accounts/models.py:419
+#: accounts/models.py:425
 msgid "not applicable - no spouse or partner"
 msgstr "geçersiz - eş veya partnerim yok"
 
-#: accounts/models.py:422 accounts/models.py:453
+#: accounts/models.py:428 accounts/models.py:461
 msgid "0"
 msgstr "0"
 
-#: accounts/models.py:423 accounts/models.py:450
+#: accounts/models.py:429 accounts/models.py:455
 msgid "1"
 msgstr "1"
 
-#: accounts/models.py:424 accounts/models.py:450
+#: accounts/models.py:430 accounts/models.py:456
 msgid "2"
 msgstr "2"
 
-#: accounts/models.py:425
+#: accounts/models.py:431 accounts/models.py:457
 msgid "3"
 msgstr "3"
 
-#: accounts/models.py:426
+#: accounts/models.py:432
 msgid "4"
 msgstr "4"
 
-#: accounts/models.py:427
+#: accounts/models.py:433
 msgid "5"
 msgstr "5"
 
-#: accounts/models.py:428
+#: accounts/models.py:434
 msgid "6"
 msgstr "6"
 
-#: accounts/models.py:429
+#: accounts/models.py:435
 msgid "7"
 msgstr "7"
 
-#: accounts/models.py:430
+#: accounts/models.py:436
 msgid "8"
 msgstr "8"
 
-#: accounts/models.py:431
+#: accounts/models.py:437
 msgid "9"
 msgstr "9"
 
-#: accounts/models.py:432
+#: accounts/models.py:438
 msgid "10"
 msgstr "10"
 
-#: accounts/models.py:433
+#: accounts/models.py:439
 msgid "More than 10"
 msgstr "11"
 
-#: accounts/models.py:436
+#: accounts/models.py:442
 msgid "under 18"
 msgstr "18 yaş altı"
 
-#: accounts/models.py:437
+#: accounts/models.py:443
 msgid "18-21"
 msgstr "18-21"
 
-#: accounts/models.py:438
+#: accounts/models.py:444
 msgid "22-24"
 msgstr "22-24"
 
-#: accounts/models.py:439
+#: accounts/models.py:445
 msgid "25-29"
 msgstr "25-29"
 
-#: accounts/models.py:440
+#: accounts/models.py:446
 msgid "30-34"
 msgstr "30-34"
 
-#: accounts/models.py:441
+#: accounts/models.py:447
 msgid "35-39"
 msgstr "35-39"
 
-#: accounts/models.py:442
+#: accounts/models.py:448
 msgid "40-44"
 msgstr "40-44"
 
-#: accounts/models.py:443
+#: accounts/models.py:449
 msgid "45-49"
 msgstr "45-49"
 
-#: accounts/models.py:444
+#: accounts/models.py:450
 msgid "50-59"
 msgstr "50-59"
 
-#: accounts/models.py:445
+#: accounts/models.py:451
 msgid "60-69"
 msgstr "60-69"
 
-#: accounts/models.py:446
+#: accounts/models.py:452
 msgid "70 or over"
 msgstr "70 veya üstü"
 
-#: accounts/models.py:450
-msgid "3 or more"
-msgstr "3 veya daha fazla"
+#: accounts/models.py:458
+msgid "Another number, or explain below"
+msgstr ""
 
-#: accounts/models.py:450
-msgid "varies"
-msgstr "değişiyor"
-
-#: accounts/models.py:454
+#: accounts/models.py:462
 msgid "5000"
 msgstr "5000"
 
-#: accounts/models.py:455
+#: accounts/models.py:463
 msgid "10000"
 msgstr "10000"
 
-#: accounts/models.py:456
+#: accounts/models.py:464
 msgid "15000"
 msgstr "15000"
 
-#: accounts/models.py:457
+#: accounts/models.py:465
 msgid "20000"
 msgstr "20000"
 
-#: accounts/models.py:458
+#: accounts/models.py:466
 msgid "30000"
 msgstr "30000"
 
-#: accounts/models.py:459
+#: accounts/models.py:467
 msgid "40000"
 msgstr "40000"
 
-#: accounts/models.py:460
+#: accounts/models.py:468
 msgid "50000"
 msgstr "50000"
 
-#: accounts/models.py:461
+#: accounts/models.py:469
 msgid "60000"
 msgstr "60000"
 
-#: accounts/models.py:462
+#: accounts/models.py:470
 msgid "70000"
 msgstr "70000"
 
-#: accounts/models.py:463
+#: accounts/models.py:471
 msgid "80000"
 msgstr "80000"
 
-#: accounts/models.py:464
+#: accounts/models.py:472
 msgid "90000"
 msgstr "90000"
 
-#: accounts/models.py:465
+#: accounts/models.py:473
 msgid "100000"
 msgstr "100000"
 
-#: accounts/models.py:466
+#: accounts/models.py:474
 msgid "110000"
 msgstr "110000"
 
-#: accounts/models.py:467
+#: accounts/models.py:475
 msgid "120000"
 msgstr "120000"
 
-#: accounts/models.py:468
+#: accounts/models.py:476
 msgid "130000"
 msgstr "130000"
 
-#: accounts/models.py:469
+#: accounts/models.py:477
 msgid "140000"
 msgstr "140000"
 
-#: accounts/models.py:470
+#: accounts/models.py:478
 msgid "150000"
 msgstr "150000"
 
-#: accounts/models.py:471
+#: accounts/models.py:479
 msgid "160000"
 msgstr "160000"
 
-#: accounts/models.py:472
+#: accounts/models.py:480
 msgid "170000"
 msgstr "170000"
 
-#: accounts/models.py:473
+#: accounts/models.py:481
 msgid "180000"
 msgstr "180000"
 
-#: accounts/models.py:474
+#: accounts/models.py:482
 msgid "190000"
 msgstr "190000"
 
-#: accounts/models.py:475
+#: accounts/models.py:483
 msgid "over 200000"
 msgstr "200000 üstü"
 
-#: accounts/models.py:479
+#: accounts/models.py:487
 msgid "urban"
 msgstr "kentsel"
 
-#: accounts/models.py:479
+#: accounts/models.py:487
 msgid "suburban"
 msgstr "banliyö"
 
-#: accounts/models.py:479
+#: accounts/models.py:487
 msgid "rural"
 msgstr "kırsal"
 
-#: accounts/models.py:529
+#: accounts/models.py:541
 msgid "Select a State"
 msgstr "Bölge Seçiniz"
 
-#: accounts/templates/accounts/_account-navigation.html:2
-#: accounts/templates/accounts/account-update.html:24
+#: accounts/models.py:678
+#, fuzzy
+#| msgid "Gan"
+msgid "and"
+msgstr "Gan"
+
+#: accounts/templates/accounts/_account-navigation.html:3
+#: accounts/templates/accounts/account-update.html:17
 msgid "Account Information"
 msgstr "Hesap Bilgisi"
 
-#: accounts/templates/accounts/_account-navigation.html:2
+#: accounts/templates/accounts/_account-navigation.html:5
 msgid "Change your login credentials and/or nickname."
 msgstr "Oturum açma bilgilerinizi ve/veya takma adınızı değiştirin."
 
-#: accounts/templates/accounts/_account-navigation.html:3
+#: accounts/templates/accounts/_account-navigation.html:7
 msgid "Demographic Survey"
 msgstr "Demografik Anket"
 
-#: accounts/templates/accounts/_account-navigation.html:3
+#: accounts/templates/accounts/_account-navigation.html:9
 msgid "Tell us more about yourself."
 msgstr "Bize biraz daha kendinizden bahsedin."
 
-#: accounts/templates/accounts/_account-navigation.html:4
+#: accounts/templates/accounts/_account-navigation.html:11
 msgid "Children Information"
 msgstr "Çocuk Bilgisi"
 
-#: accounts/templates/accounts/_account-navigation.html:4
+#: accounts/templates/accounts/_account-navigation.html:13
 msgid "Add or edit participant information."
 msgstr "Katılımcı bilgisi ekle veya düzenle"
 
-#: accounts/templates/accounts/_account-navigation.html:5
-#: web/templates/web/participant-email-preferences.html:4
+#: accounts/templates/accounts/_account-navigation.html:16
+msgid "Continue to Study"
+msgstr ""
+
+#: accounts/templates/accounts/_account-navigation.html:18
+msgid "Go on to"
+msgstr ""
+
+#: accounts/templates/accounts/_account-navigation.html:23
+msgid "Find Another Study"
+msgstr ""
+
+#: accounts/templates/accounts/_account-navigation.html:25
+msgid "Find a Study Now"
+msgstr ""
+
+#: accounts/templates/accounts/_account-navigation.html:29
+msgid "See all available studies."
+msgstr ""
+
+#: accounts/templates/accounts/_account-navigation.html:31
+#: web/templates/web/participant-email-preferences.html:5
 msgid "Email Preferences"
 msgstr "Email tercihleri"
 
-#: accounts/templates/accounts/_account-navigation.html:5
+#: accounts/templates/accounts/_account-navigation.html:33
 msgid "Edit when you can be contacted."
 msgstr "İletişime geçilebileceğiniz zamanları düzenle"
 
-#: accounts/templates/accounts/account-update.html:14
-#: web/templates/web/_navigation.html:38 web/templates/web/child-update.html:16
-#: web/templates/web/children-list.html:67
-#: web/templates/web/demographic-data-update.html:78
-#: web/templates/web/participant-email-preferences.html:16
-msgid "My Account"
-msgstr "Hesabım"
-
-#: accounts/templates/accounts/account-update.html:37
-#: accounts/templates/accounts/account-update.html:58
-#: web/templates/web/child-update.html:46
-#: web/templates/web/demographic-data-update.html:102
-#: web/templates/web/participant-email-preferences.html:38
-msgid "Save"
-msgstr "Kaydet"
-
-#: accounts/templates/accounts/account-update.html:45
+#: accounts/templates/accounts/account-update.html:36
 msgid "Change Your Password"
 msgstr "Şifreni değiştir"
 
-#: accounts/templates/accounts/account-update.html:68
+#: accounts/templates/accounts/account-update.html:57
 msgid "Manage Two-Factor Authentication"
 msgstr "İki Faktörlü Kimlik Doğrulamayı Yönetin"
 
-#: accounts/templates/accounts/account-update.html:83
+#: accounts/templates/accounts/account-update.html:72
 msgid ""
 "If you'd like, you can turn two-factor authentication off here. Just enter "
 "your one-time password here, hit submit, and it'll get deleted for you!"
@@ -747,158 +801,98 @@ msgstr ""
 "seferlik şifrenizi buraya girin, gönder düğmesine basın ve sizin için "
 "silinecek!"
 
-#: accounts/templates/accounts/account-update.html:108
+#: accounts/templates/accounts/account-update.html:77
+msgid ""
+"It looks like you were in the middle of setting up two factor "
+"authentication, but didn't complete the process. You can capture the QR code "
+"here, verify with a one-time password, and finish the process."
+msgstr ""
+
+#: accounts/templates/accounts/account-update.html:94
 msgid "Set up Two-Factor Authentication"
 msgstr "İki Faktörlü Kimlik Doğrulamayı ayarlayın."
 
-#: accounts/templates/accounts/participant_detail.html:15
+#: accounts/templates/accounts/participant_detail.html:17
 msgid "All Participants"
 msgstr "Tüm Katılımcılar"
 
-#: accounts/templates/accounts/participant_detail.html:23
+#: accounts/templates/accounts/participant_detail.html:30
 msgid "Participant ID"
 msgstr "Katılımcı ID"
 
-#: accounts/templates/accounts/participant_detail.html:24
+#: accounts/templates/accounts/participant_detail.html:34
 msgid "Last Active:"
 msgstr "Son aktif olma:"
 
-#: accounts/templates/accounts/participant_detail.html:25
+#: accounts/templates/accounts/participant_detail.html:37
 msgid "Participant global ID:"
 msgstr "Katılımcı global ID"
 
-#: accounts/templates/accounts/participant_detail.html:31
-#: web/templates/web/children-list.html:105
+#: accounts/templates/accounts/participant_detail.html:44
 msgid "Children"
 msgstr "Çocuk"
 
-#: accounts/templates/accounts/participant_detail.html:46
+#: accounts/templates/accounts/participant_detail.html:59
 msgid "Age"
 msgstr "Yaş"
 
-#: accounts/templates/accounts/participant_detail.html:70
+#: accounts/templates/accounts/participant_detail.html:77
 msgid "Additional Info"
 msgstr "Ek Bilgi"
 
-#: accounts/templates/accounts/participant_detail.html:79
+#: accounts/templates/accounts/participant_detail.html:85
 msgid "No children profiles registered!"
 msgstr "Kayıtlı çocuk profili yok."
 
-#: accounts/templates/accounts/participant_detail.html:83
+#: accounts/templates/accounts/participant_detail.html:90
 msgid "Latest Demographic Data"
 msgstr "Son Demografik Veri"
 
-#: accounts/templates/accounts/participant_detail.html:94
+#: accounts/templates/accounts/participant_detail.html:93
+msgid "Country"
+msgstr "Ülke"
+
+#: accounts/templates/accounts/participant_detail.html:99
 msgid "State"
 msgstr "Bölge"
 
-#: accounts/templates/accounts/participant_detail.html:102
+#: accounts/templates/accounts/participant_detail.html:105
 msgid "Area description"
 msgstr "Bölge tarifi"
 
-#: accounts/templates/accounts/participant_detail.html:110
+#: accounts/templates/accounts/participant_detail.html:111
 msgid "Languages Spoken at Home"
 msgstr "Evde konuşulan diller"
 
-#: accounts/templates/accounts/participant_detail.html:118
+#: accounts/templates/accounts/participant_detail.html:117
 msgid "Number of Children"
 msgstr "Çocuk sayısı"
 
-#: accounts/templates/accounts/participant_detail.html:126
+#: accounts/templates/accounts/participant_detail.html:125
 msgid "Children current ages"
 msgstr "Çocukların güncel yaşları"
 
-#: accounts/templates/accounts/participant_detail.html:134
+#: accounts/templates/accounts/participant_detail.html:131
+#, fuzzy
+#| msgid "Study Responses"
+msgid "No Response"
+msgstr "Çalışma Yanıtları"
+
+#: accounts/templates/accounts/participant_detail.html:137
 msgid "Number of Guardians"
 msgstr "Bakıcı sayısı"
 
-#: accounts/templates/accounts/participant_detail.html:142
+#: accounts/templates/accounts/participant_detail.html:145
 msgid "Explanation for Guardians:"
 msgstr "Bakıcılar için Açıklama:"
 
-#: accounts/templates/accounts/participant_detail.html:150
+#: accounts/templates/accounts/participant_detail.html:153
 msgid "Race"
 msgstr "Irk"
 
-#: exp/templates/exp/dashboard.html:16
+#: exp/templates/exp/dashboard.html:15
 msgid "Dashboard"
 msgstr "Gösterge Paneli"
-
-#: project/settings.py:228 studies/fields.py:68
-msgid "German"
-msgstr "Almanca"
-
-#: project/settings.py:229 studies/fields.py:57
-msgid "English"
-msgstr "İngilizce"
-
-#: project/settings.py:230 studies/fields.py:101
-msgid "Spanish"
-msgstr "İspanyolca"
-
-#: project/settings.py:231
-msgid "Argentinian Spanish"
-msgstr "Arjantin İspanyolcası"
-
-#: project/settings.py:232 studies/fields.py:66
-msgid "French"
-msgstr "Fransız"
-
-#: project/settings.py:233
-msgid "Canadian French"
-msgstr "Kanada Fransızcası"
-
-#: project/settings.py:234
-msgid "Hebrew"
-msgstr "İbranice"
-
-#: project/settings.py:235 studies/fields.py:76
-msgid "Italian"
-msgstr "İtalyanca"
-
-#: project/settings.py:236 studies/fields.py:77
-msgid "Japanese"
-msgstr "Japonca"
-
-#: project/settings.py:237 studies/fields.py:82
-msgid "Korean"
-msgstr "Korece"
-
-#: project/settings.py:238
-msgid "Norwegian Bokmål"
-msgstr "Norveççe Bokmål"
-
-#: project/settings.py:239 studies/fields.py:94
-msgid "Polish"
-msgstr "Lehçe"
-
-#: project/settings.py:240 studies/fields.py:95
-msgid "Portuguese"
-msgstr "Portekizce"
-
-#: project/settings.py:241
-msgid "Brazilian Portuguese"
-msgstr "Brezilya Portekizcesi"
-
-#: project/settings.py:242 studies/fields.py:96
-msgid "Romanian"
-msgstr "Romence"
-
-#: project/settings.py:243 studies/fields.py:97
-msgid "Russian"
-msgstr "Rusça"
-
-#: project/settings.py:244 studies/fields.py:107
-msgid "Turkish"
-msgstr "Türkçe"
-
-#: project/settings.py:245
-msgid "Simplified Chinese"
-msgstr "Basitleştirilmiş Çince"
-
-#: project/settings.py:246 studies/fields.py:64
-msgid "Dutch"
-msgstr "Flemenkçe"
 
 #: studies/fields.py:7
 msgid "Autism Spectrum Disorder"
@@ -948,6 +942,10 @@ msgstr "Yediz"
 msgid "Octuplet"
 msgstr "Sekiziz"
 
+#: studies/fields.py:57
+msgid "English"
+msgstr "İngilizce"
+
 #: studies/fields.py:58
 msgid "Amharic"
 msgstr "Amharca"
@@ -972,13 +970,25 @@ msgstr "Cebuano"
 msgid "Chhattisgarhi"
 msgstr "Chhattisgarhi"
 
+#: studies/fields.py:64
+msgid "Dutch"
+msgstr "Flemenkçe"
+
 #: studies/fields.py:65
 msgid "Egyptian Spoken Arabic"
 msgstr "Mısırda Konuşulan Arapça"
 
+#: studies/fields.py:66
+msgid "French"
+msgstr "Fransız"
+
 #: studies/fields.py:67
 msgid "Gan"
 msgstr "Gan"
+
+#: studies/fields.py:68
+msgid "German"
+msgstr "Almanca"
 
 #: studies/fields.py:69
 msgid "Gujarati"
@@ -1008,6 +1018,14 @@ msgstr "Endonezya dili"
 msgid "Iranian Persian"
 msgstr "İran Farsçası"
 
+#: studies/fields.py:76
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: studies/fields.py:77
+msgid "Japanese"
+msgstr "Japonca"
+
 #: studies/fields.py:78
 msgid "Javanese"
 msgstr "Cava dili"
@@ -1023,6 +1041,10 @@ msgstr "Kannada"
 #: studies/fields.py:81
 msgid "Khmer"
 msgstr "Khmer"
+
+#: studies/fields.py:82
+msgid "Korean"
+msgstr "Korece"
 
 #: studies/fields.py:83
 msgid "Magahi"
@@ -1068,6 +1090,22 @@ msgstr "Kuzey Özbekçe"
 msgid "Odia"
 msgstr "Odia"
 
+#: studies/fields.py:94
+msgid "Polish"
+msgstr "Lehçe"
+
+#: studies/fields.py:95
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: studies/fields.py:96
+msgid "Romanian"
+msgstr "Romence"
+
+#: studies/fields.py:97
+msgid "Russian"
+msgstr "Rusça"
+
 #: studies/fields.py:98
 msgid "Saraiki"
 msgstr "Saraiki"
@@ -1079,6 +1117,10 @@ msgstr "Sindice"
 #: studies/fields.py:100
 msgid "Somali"
 msgstr "Somali dili"
+
+#: studies/fields.py:101
+msgid "Spanish"
+msgstr "İspanyolca"
 
 #: studies/fields.py:102
 msgid "Sunda"
@@ -1099,6 +1141,10 @@ msgstr "Telugu"
 #: studies/fields.py:106
 msgid "Thai"
 msgstr "Tay dili"
+
+#: studies/fields.py:107
+msgid "Turkish"
+msgstr "Türkçe"
 
 #: studies/fields.py:108
 msgid "Ukrainian"
@@ -1148,7 +1194,7 @@ msgstr "Erkek"
 msgid "Female"
 msgstr "Kadın"
 
-#: studies/models.py:113
+#: studies/models.py:131
 msgid ""
 "The Users who belong to this Lab. A user in this lab will be able to create "
 "studies associated with this Lab and can be added to this Lab's studies."
@@ -1156,30 +1202,71 @@ msgstr ""
 "Bu Lab'a ait olan kullanıcılar. Bu Labdaki kullanıcı, lab ile bağlantılı "
 "çalışmalar yaratabilecek ve bu Lab'ın çalışmalarına eklenebilecektir."
 
-#: studies/models.py:122
+#: studies/models.py:140
 msgid "The Users who have requested to join this Lab."
 msgstr "Bu Lab'a katılmayı talep eden kullanıcılar"
 
-#: web/templates/frontpages/contact.html:15
+#: web/templates/frontpages/contact.html:16
 msgid "Technical difficulties"
 msgstr "Teknik zorluklar"
 
-#: web/templates/frontpages/contact.html:17
+#: web/templates/frontpages/contact.html:18
+msgid ""
+"To report any technical difficulties during participation, please contact "
+"our team by email at "
+msgstr ""
+
+#: web/templates/frontpages/contact.html:20
+#: web/templates/frontpages/contact.html:24
+#: web/templates/frontpages/contact.html:32
+#: web/templates/frontpages/contact.html:37
+msgid "."
+msgstr ""
+
+#: web/templates/frontpages/contact.html:22
 msgid "Questions about the studies"
 msgstr "Çalışmalarla ilgili sorular"
 
-#: web/templates/frontpages/contact.html:19
-#: web/templates/frontpages/privacy.html:140
+#: web/templates/frontpages/contact.html:24
+msgid ""
+"If you have any questions or concerns about the studies, please first check "
+"our FAQ. With any additional questions, please contact us at "
+msgstr ""
+
+#: web/templates/frontpages/contact.html:26
+#: web/templates/frontpages/privacy.html:148
 msgid "For researchers"
 msgstr "Araştırmacılar için"
 
-#: web/templates/frontpages/default.html:10
-#: web/templates/web/_navigation.html:16 web/templates/web/_navigation.html:21
-#: web/templates/web/base.html:10
+#: web/templates/frontpages/contact.html:28
+msgid ""
+"Lookit is available to all developmental researchers, and the code is "
+"entirely open- To learn more about running your own studies or contributing, "
+"please check out the "
+msgstr ""
+
+#: web/templates/frontpages/contact.html:31
+#, fuzzy
+#| msgid "Documentation"
+msgid "documentation"
+msgstr "Belgeler"
+
+#: web/templates/frontpages/contact.html:35
+msgid ""
+"Several initial test studies of a prototype Lookit platform were completed "
+"in 2015; you can read about the results, and strengths and limitations of "
+"the platform, in "
+msgstr ""
+
+#: web/templates/frontpages/contact.html:36
+msgid "these papers"
+msgstr ""
+
+#: web/templates/frontpages/default.html:13 web/templates/web/base.html:15
 msgid "Lookit"
 msgstr "Lookit"
 
-#: web/templates/frontpages/default.html:53
+#: web/templates/frontpages/default.html:62
 msgid ""
 "This material is based upon work supported by the National Science "
 "Foundation (NSF) under Grants 1429216 and 1823919; the Center for Brains, "
@@ -1197,42 +1284,60 @@ msgstr ""
 "fikir, bulgu ve sonuç veya öneri yazar(lar)a aittir ve National Science "
 "Foundation'ın görüşlerini yansıtmayabilir."
 
-#: web/templates/frontpages/default.html:58 web/templates/frontpages/home.html:48
+#: web/templates/frontpages/default.html:67
 msgid "Privacy"
 msgstr "Gizlilik"
 
-#: web/templates/frontpages/default.html:59 web/templates/frontpages/home.html:49
+#: web/templates/frontpages/default.html:70
 msgid "Contact us"
 msgstr "Bizimle iletişime geçin"
 
-#: web/templates/frontpages/default.html:60
+#: web/templates/frontpages/default.html:73
 msgid "Connect"
 msgstr "Bağlan"
 
-#: web/templates/frontpages/faq.html:11
+#: web/templates/frontpages/faq.html:12
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
-#: web/templates/frontpages/faq.html:16
+#: web/templates/frontpages/faq.html:17
 msgid "Participation"
 msgstr "Katılım"
 
-#: web/templates/frontpages/faq.html:20
+#: web/templates/frontpages/faq.html:22
 msgid "What is a 'study' about cognitive development?"
 msgstr "Bilişsel gelişimle ilgili \"çalışma\" nedir?"
 
-#: web/templates/frontpages/faq.html:25
+#: web/templates/frontpages/faq.html:28
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                <p>Cognitive development is the science "
+#| "of what kids understand and how they learn. Researchers in cognitive "
+#| "development are interested in questions like...</p>\n"
+#| "                                <ul>\n"
+#| "                                    <li>what knowledge and abilities "
+#| "infants are born with, and what they have to learn from experience</li>\n"
+#| "                                    <li>how abilities like mathematical "
+#| "reasoning are organized and how they develop over time</li>\n"
+#| "                                    <li>what strategies children use to "
+#| "learn from the wide variety of data they observe</li>\n"
+#| "                                </ul>\n"
+#| "                                <p>A study is meant to answer a very "
+#| "specific question about how children learn or what they know: for "
+#| "instance, 'Do three-month-olds recognize their parents' faces?'</p>\n"
+#| "                                "
 msgid ""
 "\n"
 "                                <p>Cognitive development is the science of "
 "what kids understand and how they learn. Researchers in cognitive "
 "development are interested in questions like...</p>\n"
 "                                <ul>\n"
-"                                    <li>what knowledge and abilities infants "
+"                                    <li>What knowledge and abilities infants "
 "are born with, and what they have to learn from experience</li>\n"
-"                                    <li>how abilities like mathematical "
+"                                    <li>How abilities like mathematical "
 "reasoning are organized and how they develop over time</li>\n"
-"                                    <li>what strategies children use to "
+"                                    <li>What strategies children use to "
 "learn from the wide variety of data they observe</li>\n"
 "                                </ul>\n"
 "                                <p>A study is meant to answer a very "
@@ -1258,23 +1363,89 @@ msgstr ""
 "p>\n"
 "                                "
 
-#: web/templates/frontpages/faq.html:40
-msgid "How can we participate online?"
-msgstr "Çevrimiçi olarak nasıl katılabiliriz?"
+#: web/templates/frontpages/faq.html:44
+msgid "Why participate in developmental research?"
+msgstr ""
 
-#: web/templates/frontpages/faq.html:45
+#: web/templates/frontpages/faq.html:50
+msgid ""
+"\n"
+"                            <p>Lots of reasons! Here are three:</p>\n"
+"                            <ul>\n"
+"                                <li>Researchers work hard to make the "
+"studies engaging for children and families. We hope the study is fun for you "
+"and your child!</li>\n"
+"                                <li>Your work supports science. Children are "
+"the world's most powerful learners and the more we understand about how "
+"children grow and learn, the more we will understand about the human mind.</"
+"li>\n"
+"                                <li>While research studies aren't usually "
+"designed to affect outcomes for individual children, the more we understand "
+"about children, the more effective we can be in building a world where they "
+"learn and thrive. Your participation helps all of us!</li>\n"
+"                            </ul>\n"
+"                            "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:65
+msgid "What happens when my child participates in a research study?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:71
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                            <p>If you have a child and would like to "
+#| "participate, create an account and take a look at what we have available "
+#| "for your child's age range. You'll need a working webcam to participate.</"
+#| "p>\n"
+#| "                                <p>When you select a study, you'll be "
+#| "asked to read a consent form and record yourself stating that you and "
+#| "your child agree to participate. Then we'll guide you through what will "
+#| "happen during the study. Depending on your child's age, your child may "
+#| "answer questions directly or we may be looking for indirect signs of what "
+#| "she thinks is going on--like how long she looks at a surprising outcome.</"
+#| "p>\n"
+#| "                                <p>Some portions of the study will be "
+#| "automatically recorded using your webcam and sent securely to the Lookit "
+#| "platform. Trained researchers will watch the video and record your "
+#| "child's responses--for instance, which way he pointed, or how long she "
+#| "looked at each image. We'll put these together with responses from lots "
+#| "of other children to learn more about how kids think!</p>\n"
+#| "                            "
 msgid ""
 "\n"
 "                            <p>If you have a child and would like to "
-"participate, create an account and take a look at what we have available for "
-"your child's age range. You'll need a working webcam to participate.</p>\n"
-"                                <p>When you select a study, you'll be asked "
-"to read a consent form and record yourself stating that you and your child "
-"agree to participate. Then we'll guide you through what will happen during "
-"the study. Depending on your child's age, your child may answer questions "
-"directly or we may be looking for indirect signs of what she thinks is going "
-"on--like how long she looks at a surprising outcome.</p>\n"
-"                                <p>Some portions of the study will be "
+"participate, create an account [LINK] and take a look at what we have "
+"available for your child's age range.  Some studies can be done at any time, "
+"and some involve a scheduled video chat with a university-based researcher. "
+"Most studies require a laptop/desktop with a webcam. The study description "
+"will tell you if you need any other supplies (such as a marker and paper, or "
+"a high chair for your baby to sit in.)</p>\n"
+"                            <p>Each study will begin in the same way: you "
+"and your child will learn what the research is about, and you can then "
+"decide whether or not you want to do it. In most cases you'll be asked to "
+"read a consent form and record yourself stating that you and your child "
+"agree to participate. In other cases, you may electronically sign a form. In "
+"addition to permission from their parent or guardian, older children will "
+"also be asked directly if they want to participate.</p>\n"
+"                            <p>Individual studies vary widely- we encourage "
+"you to try lots of different ones! Depending on your child's age, your child "
+"may answer questions directly or we may be looking for indirect signs of "
+"what she thinks is going on--like how long she looks at a surprising "
+"outcome. Some things that may happen in studies include:</p>\n"
+"                            <ul>\n"
+"                                <li>Looking at displays of dots or shapes "
+"that change on some dimension, while the webcam records your child's eye "
+"movements</li>\n"
+"                                <li>Hearing some familiar or unfamiliar "
+"words, while watching images that may match what the person is saying</li>\n"
+"                                <li>Listening to a story and then answering "
+"questions by speaking or pointing at the screen</li>\n"
+"                                <li>Answering short interview or survey "
+"questions</li>\n"
+"                            </ul>\n"
+"                            <p>Some portions of the study will be "
 "automatically recorded using your webcam and sent securely to the Lookit "
 "platform. Trained researchers will watch the video and record your child's "
 "responses--for instance, which way he pointed, or how long she looked at "
@@ -1304,33 +1475,162 @@ msgstr ""
 "birçok çocuktan gelen bu tepkiler ile birleştireceğiz!</p>\n"
 "                            "
 
-#: web/templates/frontpages/faq.html:56
-msgid "Who can create studies on Lookit?"
+#: web/templates/frontpages/faq.html:90
+#, fuzzy
+#| msgid "Who can create studies on Lookit?"
+msgid "Who creates the studies?"
 msgstr "Kimler Lookit'te çalışma yaratabilir?"
 
-#: web/templates/frontpages/faq.html:61
+#: web/templates/frontpages/faq.html:96
 msgid ""
-"Any researcher with questions about how kids learn and grow can propose a "
-"Lookit study! Each institution using Lookit has to sign a contract with MIT "
-"where they agree to the <a href='/termsofuse'>Terms of Use</a> and certify "
-"that their studies will be reviewed and approved by an institutional review "
-"board. Studies are also subject to approval by Lookit. As of June 2020 we "
-"have agreements with 20 universities!"
+"\n"
+"                                <p>All of the research conducted on the "
+"website is created by scientists to learn about child development, leading "
+"to articles in scientific journals. These publications can help inform other "
+"scientists, parents, educators, and policy-makers. Usually, these scientists "
+"work at colleges, universities, or hospitals. Rarely, a scientist who works "
+"at a nonprofit or a company might also do a study that fits this goal. If a "
+"study is meant to publish results in scientific journals for everyone to see "
+"(instead of just for one nonprofit or company), then it is possible it would "
+"appear on this website.</p>\n"
+"                                <p>If a scientist wants to use this "
+"platform, their institution has to sign a contract with MIT where they agree "
+"to the <a href=\"https://lookit.mit.edu/termsofuse\">Terms of Use</a> and "
+"certify that their studies will be reviewed and approved by an institutional "
+"review board. Studies are also subject to review and approval by Lookit/"
+"Children Helping Science. As of January 2022, we have agreements with over "
+"50 universities, including institutions in the United States, Canada, the "
+"United Kingdom, and European Union.</p>\n"
+"                                "
 msgstr ""
-"Çocukların nasıl öğrendiği ve büyüdüğü hakkında soruları olan her "
-"araştırmacı bir Lookit çalışması önerebilir! Lookit kullanan her kurum MIT "
-"ile <a \n"
-"href='/termsofuse'> Kullanım Şartları </a> 'nı kabul ettikleri ve "
-"çalışmalarının bir bağımsız etik komitesi tarafından incelenip "
-"onaylanacağını kabul ettikleri bir sözleşme imzalamalıdır. Çalışmalar "
-"Lookit'in de onayına tabidir. Haziran 2020 itibariyle 20 üniversite ile "
-"anlaşmamız var!"
 
-#: web/templates/frontpages/faq.html:69
+#: web/templates/frontpages/faq.html:107
+msgid ""
+"Who will my child and I meet when we do a study involving a scheduled video "
+"chat?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:113
+msgid ""
+"\n"
+"                                <p>The studies hosted on our site come from "
+"universities all around the world. For studies that involve a scheduled "
+"video chat, you will meet a researcher from the lab associated with the "
+"university doing the study. These researchers work as part of a team that "
+"always includes a \"principal investigator\" -- the supervisor (usually a "
+"professor) who is in charge of the lab). Studies will be conducted by "
+"someone under the direct supervision of that principal investigator (e.g., a "
+"lab manager, research assistant, or a postdoctoral, graduate, or "
+"undergraduate researcher in training).</p>\n"
+"                                "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:123
+msgid "Why are you running studies online instead of in person?"
+msgstr "Çalışmaları neden yüz yüze yapmak yerine çevrimiçi yürütüyorsunuz?"
+
+#: web/templates/frontpages/faq.html:129
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                <ul>\n"
+#| "                                    <li>Make it easier for you to take "
+#| "part in research, especially for families without a stay-at-home parent</"
+#| "li>\n"
+#| "                                    <li>Work with more kids when needed--"
+#| "right now a limiting factor in designing studies is the time it takes to "
+#| "recruit participants</li>\n"
+#| "                                    <li>Draw conclusions from a more "
+#| "representative population of families--not just those who live near a "
+#| "university and are able to visit the lab during the day.\n"
+#| "                                    </li>\n"
+#| "                                    <li>Make it easier for families to "
+#| "continue participating in longitudinal studies, which may involve "
+#| "multiple testing sessions separated by months or years</li>\n"
+#| "                                    <li>Observe more natural behavior "
+#| "because children are at home rather than in an unfamiliar place</li>\n"
+#| "                                    <li>Create a system for learning "
+#| "about special populations--for instance, children with specific "
+#| "developmental disorders</li>\n"
+#| "                                    <li>Make the procedures we use in "
+#| "doing research more transparent, and make it easier to replicate our "
+#| "findings</li>\n"
+#| "                                    <li>Communicate with families about "
+#| "the research we're doing and what we can learn from it</li>\n"
+#| "                                </ul>\n"
+#| "                                "
+msgid ""
+"\n"
+"                                <p>Traditionally, developmental studies "
+"happen in a quiet room in a university lab. Researchers call or email local "
+"parents to see if they'd like to take part and schedule an appointment for "
+"them to come visit the lab.</p>\n"
+"                                <p>While researchers have been exploring "
+"online studies with children for several years, the COVID pandemic in 2020 "
+"forced most developmental labs to stop in-person visits entirely. Some "
+"studies will always need to take place in a lab, but some work very well "
+"online, and we have found these studies have a number of benefits for both "
+"families and scientists.</p>\n"
+"                                <p>Why complement these in-lab studies with "
+"online ones? We're hoping to...</p>\n"
+"                                <ul>\n"
+"                                    <li>Make it easier for you to take part "
+"in research, especially for families without a stay-at-home parent</li>\n"
+"                                    <li>Work with more kids when needed--"
+"right now a limiting factor in designing studies is the time it takes to "
+"recruit participants</li>\n"
+"                                    <li>Draw conclusions from a more "
+"representative population of families--not just those who live near a "
+"university and are able to visit the lab during the day.\n"
+"                                    </li>\n"
+"                                    <li>Make it easier for families to "
+"continue participating in longitudinal studies, which may involve multiple "
+"testing sessions separated by months or years</li>\n"
+"                                    <li>Observe more natural behavior "
+"because children are at home rather than in an unfamiliar place</li>\n"
+"                                    <li>Create a system for learning about "
+"special populations--for instance, children with specific developmental "
+"disorders</li>\n"
+"                                    <li>Make the procedures we use in doing "
+"research more transparent, and make it easier to replicate our findings</"
+"li>\n"
+"                                    <li>Communicate with families about the "
+"research we're doing and what we can learn from it</li>\n"
+"                                </ul>\n"
+"                                "
+msgstr ""
+"\n"
+"                                <ul>\n"
+"                                    <li>Araştırmalarda yer almanız "
+"kolaylaşsın, özellikle her iki ebeveynin de çalıştığı aileler için</"
+"li>                                   \n"
+"                                    <li>İhtiyacınız olduğunda daha fazla "
+"çocukla çalışın—şu anda çalışmaları tasarlamada sınırlayıcı bir faktör, "
+"katılımcı toplamak için geçen süredir</li>\n"
+"                                    <li>Daha temsili bir aile "
+"popülasyonundan sonuçlar çıkarın - sadece bir üniversitenin yakınında "
+"yaşayan ve gün içinde laboratuvarı ziyaret edebilenlerden değil.\n"
+"                                    </li>\n"
+"                                    <li>Ailelerin birkaç ay ya da yıl ile "
+"birbirinden ayrılmış birden fazla test oturumlarını içerebilecek boylamsal "
+"çalışmalara devam edebilmesi kolaylaşsın</li>\n"
+"                                    <li>Çocuklar yabancı bir yerde değil "
+"evlerinde oldukları için daha doğal davranışlar gözlemleyin</li>\n"
+"                                    <li>Özel popülasyonları öğrenmek için "
+"bir sistem oluşturun--örneğin, belirli gelişimsel bozuklukları olan "
+"çocuklar</li>\n"
+"                                    <li>Araştırma yaparken kullandığımız "
+"prosedürleri daha şeffaf hale getirin ve bulgularımızı replike etmeyi "
+"kolaylaştırın</li>\n"
+"                                    <li>Yaptığımız araştırma ve bu "
+"araştırmadan ne öğrenebileceğimiz hakkında ailelerle iletişim kurun</li>\n"
+"                                </ul>"
+
+#: web/templates/frontpages/faq.html:152
 msgid "How do we provide consent to participate?"
 msgstr "Katılmak için nasıl onay veririz?"
 
-#: web/templates/frontpages/faq.html:74
+#: web/templates/frontpages/faq.html:158
 msgid ""
 "\n"
 "                                <p>Rather than having the parent or legal "
@@ -1365,16 +1665,11 @@ msgstr ""
 "teknik bir problemden var ve videonun sesi yoksa--araştırmacılar size "
 "iletişim tercihlerinize bağlı olarak ulaşıp doğrulama yapmak isteyebilir.</p>"
 
-#: web/templates/frontpages/faq.html:80
-msgid "https://storage.googleapis.com/lookit-staging/static/videos/consent.mp4"
-msgstr ""
-"https://storage.googleapis.com/lookit-staging/static/videos/consent.mp4"
-
-#: web/templates/frontpages/faq.html:89
+#: web/templates/frontpages/faq.html:180
 msgid "How is our information kept secure and confidential?"
 msgstr "Bilgilerimiz nasıl güvenli ve gizli tutulacak?"
 
-#: web/templates/frontpages/faq.html:94
+#: web/templates/frontpages/faq.html:186
 msgid ""
 "\n"
 "                                <p>\n"
@@ -1426,11 +1721,11 @@ msgstr ""
 "                                <p>Ayrıca şurayı inceleyin: ‘Videomuzu "
 "kimler görecek?’</p>"
 
-#: web/templates/frontpages/faq.html:107
+#: web/templates/frontpages/faq.html:200
 msgid "Who will see our video?"
 msgstr "Videomuzu kimler görecek?"
 
-#: web/templates/frontpages/faq.html:112
+#: web/templates/frontpages/faq.html:206
 msgid ""
 "\n"
 "                                <p>Lookit staff at MIT will have access to "
@@ -1573,11 +1868,11 @@ msgstr ""
 "ya da endişeniz varsa, lütfen ekibimiz ile buradan iletişime geçin <a href="
 "\"mailto:lookit@mit.edu\">lookit@mit.edu</a>.</p>"
 
-#: web/templates/frontpages/faq.html:130
+#: web/templates/frontpages/faq.html:225
 msgid "What information do researchers use from our video?"
 msgstr "Araştırmacılar videomuzdaki hangi bilgiyi kullanacak?"
 
-#: web/templates/frontpages/faq.html:136
+#: web/templates/frontpages/faq.html:232
 msgid ""
 "For children under about two years old, we usually design our studies to let "
 "their eyes do the talking! We're interested in where on the screen your "
@@ -1594,7 +1889,7 @@ msgstr ""
 "bir fikir edinmemize yardımcı olur, böylece videonun geri kalanını "
 "kodlayabiliriz."
 
-#: web/templates/frontpages/faq.html:143
+#: web/templates/frontpages/faq.html:246
 msgid ""
 "Here's an example of a few children watching our calibration video--it's "
 "easy to see that they look to one side and then the other."
@@ -1602,7 +1897,7 @@ msgstr ""
 "İşte kalibrasyon videomuzu izleyen birkaç çocuğun bir örneği-- önce bir "
 "tarafa sonra diğerine baktıklarını görmek kolay."
 
-#: web/templates/frontpages/faq.html:149
+#: web/templates/frontpages/faq.html:260
 msgid ""
 "Your child's decisions about where to look can give us lots of information "
 "about what he or she understands. Here are some of the techniques labs use "
@@ -1612,36 +1907,60 @@ msgstr ""
 "pek çok bilgi verebilir. İşte laboratuvarların çocukların nasıl öğrendikleri "
 "hakkında daha fazla bilgi edinmek için kullandıkları tekniklerden bazıları."
 
-#: web/templates/frontpages/faq.html:150
+#: web/templates/frontpages/faq.html:263
 msgid "Habituation"
 msgstr "Alıştırma"
 
-#: web/templates/frontpages/faq.html:151
+#: web/templates/frontpages/faq.html:265
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                <p>In a habituation study, we first show "
+#| "infants many examples of one type of object or event, and they lose "
+#| "interest over time. Infants typically look for a long time at the first "
+#| "pictures, but then they start to look away more quickly. Once their "
+#| "looking times are much less than they were initially, we show either a "
+#| "picture from a new category or a new picture from the familiar category. "
+#| "If infants now look longer to the novel example, we can tell that they "
+#| "understood--and got bored of--the category we showed initially.</p>\n"
+#| "                                <p>Habituation requires waiting for each "
+#| "individual infant to achieve some threshold of \"boredness\"--for "
+#| "instance, looking half as long at a picture as he or she did initially. "
+#| "Sometimes this is impractical, and we use familiarization instead. In a "
+#| "familiarization study, we show all babies the same number of examples, "
+#| "and then see how interested they are in the familiar versus a new "
+#| "category. Younger infants and those who have seen few examples tend to "
+#| "show a familiarity preference--they look longer at images similar to what "
+#| "they have seen before. Older infants and those who have seen many "
+#| "examples tend to show a novelty preference--they look longer at images "
+#| "that are different from the ones they saw before. You probably notice the "
+#| "same phenomenon when you hear a new song on the radio: initially you "
+#| "don't recognize it; after it's played several times you may like it and "
+#| "sing along; after it's played hundreds of times you would choose to "
+#| "listen to anything else.</p>\n"
+#| "                                "
 msgid ""
-"\n"
-"                                <p>In a habituation study, we first show "
-"infants many examples of one type of object or event, and they lose interest "
-"over time. Infants typically look for a long time at the first pictures, but "
-"then they start to look away more quickly. Once their looking times are much "
-"less than they were initially, we show either a picture from a new category "
-"or a new picture from the familiar category. If infants now look longer to "
-"the novel example, we can tell that they understood--and got bored of--the "
-"category we showed initially.</p>\n"
-"                                <p>Habituation requires waiting for each "
-"individual infant to achieve some threshold of \"boredness\"--for instance, "
-"looking half as long at a picture as he or she did initially. Sometimes this "
-"is impractical, and we use familiarization instead. In a familiarization "
-"study, we show all babies the same number of examples, and then see how "
-"interested they are in the familiar versus a new category. Younger infants "
-"and those who have seen few examples tend to show a familiarity preference--"
-"they look longer at images similar to what they have seen before. Older "
-"infants and those who have seen many examples tend to show a novelty "
-"preference--they look longer at images that are different from the ones they "
-"saw before. You probably notice the same phenomenon when you hear a new song "
-"on the radio: initially you don't recognize it; after it's played several "
-"times you may like it and sing along; after it's played hundreds of times "
-"you would choose to listen to anything else.</p>\n"
-"                                "
+" <p>In a habituation study, we first show infants many examples of one type "
+"of object or event, and they lose interest over time. Infants typically look "
+"for a long time at the first pictures, but then they start to look away more "
+"quickly. Once their looking times are much less than they were initially, we "
+"show either a picture from a new category or a new picture from the familiar "
+"category. If infants now look longer to the novel example, we can tell that "
+"they understood--and got bored of--the category we showed initially.</p> "
+"<p>Habituation requires waiting for each individual infant to achieve some "
+"threshold of \"boredness\"--for instance, looking half as long at a picture "
+"as he or she did initially. Sometimes this is impractical, and we use "
+"familiarization instead. In a familiarization study, we show all babies the "
+"same number of examples, and then see how interested they are in the "
+"familiar versus a new category. Younger infants and those who have seen few "
+"examples tend to show a familiarity preference--they look longer at images "
+"similar to what they have seen before. Older infants and those who have seen "
+"many examples tend to show a novelty preference--they look longer at images "
+"that are different from the ones they saw before. You probably notice the "
+"same phenomenon when you hear a new song on the radio: initially you don't "
+"recognize it; after it's played several times you may like it and sing "
+"along; after it's played hundreds of times you would choose to listen to "
+"anything else.</p>\n"
 msgstr ""
 "\n"
 "                                <p>Bir alıştırma çalışmasında, bebeklere "
@@ -1668,11 +1987,11 @@ msgstr ""
 "beğenebilir ve şarkıyı söyleyebilirsiniz; yüzlerce kez oynatıldıktan sonra "
 "artık başka bir şey dinlemeyi seçersiniz.</p>"
 
-#: web/templates/frontpages/faq.html:156
+#: web/templates/frontpages/faq.html:268
 msgid "Violation of expectation"
 msgstr "Beklenti İhlali"
 
-#: web/templates/frontpages/faq.html:157
+#: web/templates/frontpages/faq.html:271
 msgid ""
 "Infants and children already have rich expectations about how events work. "
 "Children (and adults for that matter) tend to look longer at things they "
@@ -1684,11 +2003,11 @@ msgstr ""
 "daha uzun süre bakma eğilimindedirler, bu nedenle bazı durumlarda ne kadar "
 "şaşırdıklarının bir ölçüsü olarak bakma sürelerini alabiliriz."
 
-#: web/templates/frontpages/faq.html:158
+#: web/templates/frontpages/faq.html:274
 msgid "Preferential looking"
 msgstr "Tercihli İzleme"
 
-#: web/templates/frontpages/faq.html:159
+#: web/templates/frontpages/faq.html:277
 msgid ""
 "Even when they seem to be passive observers, children are making lots of "
 "decisions about where to look and what to pay attention to. In this "
@@ -1706,11 +2025,11 @@ msgstr ""
 "'alkışlamayı bulması' istendiğinde sola bakan bir katılımcıyı "
 "göstermektedir; izlediği ekran en üstte gösterilir."
 
-#: web/templates/frontpages/faq.html:165
+#: web/templates/frontpages/faq.html:291
 msgid "Predictive looking"
 msgstr "Öngörücü İzleme"
 
-#: web/templates/frontpages/faq.html:166
+#: web/templates/frontpages/faq.html:294
 msgid ""
 "Children can often make sophisticated predictions about what they expect to "
 "see or hear next. One way we can see those predictions in young children is "
@@ -1733,7 +2052,7 @@ msgstr ""
 "öğrenip öğrenmediklerini ve bir hece duyduklarında nasıl "
 "genelleştirdiklerini görebiliriz."
 
-#: web/templates/frontpages/faq.html:168
+#: web/templates/frontpages/faq.html:297
 msgid ""
 "Older children may simply be able to answer spoken questions about what they "
 "think is happening. For instance, in a recent study, two women called an "
@@ -1745,7 +2064,7 @@ msgstr ""
 "bir nesneye iki farklı uydurma isim vermiş ve çocuklara nesnenin doğru "
 "adının hangisi olduğu sorulmuştur."
 
-#: web/templates/frontpages/faq.html:174
+#: web/templates/frontpages/faq.html:311
 msgid ""
 "Another way we can learn about how older children (and adults) think is to "
 "measure their reaction times. For instance, we might ask you to help your "
@@ -1759,98 +2078,7 @@ msgstr ""
 "öğrenmesine yardımcı olmanızı isteyebilir ve ardından bir tuşa ne kadar "
 "hızlı bastığını etkileyen faktörlere bakarız."
 
-#: web/templates/frontpages/faq.html:181
-msgid "Why are you running studies online instead of in person?"
-msgstr "Çalışmaları neden yüz yüze yapmak yerine çevrimiçi yürütüyorsunuz?"
-
-#: web/templates/frontpages/faq.html:186
-msgid ""
-"Traditionally, developmental studies happen in a quiet room in a university "
-"lab. Researchers call or email local parents to see if they'd like to take "
-"part and schedule an appointment for them to come visit the lab. Why "
-"complement these in-lab studies with online ones? We're hoping to..."
-msgstr ""
-"Geleneksel olarak, gelişim çalışmaları bir üniversite laboratuvarındaki "
-"sessiz bir odada yapılır. Araştırmacılar, yer almak isteyip istemediklerini "
-"öğrenmek ve bir laboratuvar ziyareti randevusu ayarlamak için ebeveynleri "
-"arar veya email gönderir. Bu laboratuvar içi çalışmaları neden çevrimiçi "
-"araştırmalarla tamamlamayalım? Umuyoruz ki ..."
-
-#: web/templates/frontpages/faq.html:187
-msgid ""
-"\n"
-"                                <ul>\n"
-"                                    <li>Make it easier for you to take part "
-"in research, especially for families without a stay-at-home parent</li>\n"
-"                                    <li>Work with more kids when needed--"
-"right now a limiting factor in designing studies is the time it takes to "
-"recruit participants</li>\n"
-"                                    <li>Draw conclusions from a more "
-"representative population of families--not just those who live near a "
-"university and are able to visit the lab during the day.\n"
-"                                    </li>\n"
-"                                    <li>Make it easier for families to "
-"continue participating in longitudinal studies, which may involve multiple "
-"testing sessions separated by months or years</li>\n"
-"                                    <li>Observe more natural behavior "
-"because children are at home rather than in an unfamiliar place</li>\n"
-"                                    <li>Create a system for learning about "
-"special populations--for instance, children with specific developmental "
-"disorders</li>\n"
-"                                    <li>Make the procedures we use in doing "
-"research more transparent, and make it easier to replicate our findings</"
-"li>\n"
-"                                    <li>Communicate with families about the "
-"research we're doing and what we can learn from it</li>\n"
-"                                </ul>\n"
-"                                "
-msgstr ""
-"\n"
-"                                <ul>\n"
-"                                    <li>Araştırmalarda yer almanız "
-"kolaylaşsın, özellikle her iki ebeveynin de çalıştığı aileler için</"
-"li>                                   \n"
-"                                    <li>İhtiyacınız olduğunda daha fazla "
-"çocukla çalışın—şu anda çalışmaları tasarlamada sınırlayıcı bir faktör, "
-"katılımcı toplamak için geçen süredir</li>\n"
-"                                    <li>Daha temsili bir aile "
-"popülasyonundan sonuçlar çıkarın - sadece bir üniversitenin yakınında "
-"yaşayan ve gün içinde laboratuvarı ziyaret edebilenlerden değil.\n"
-"                                    </li>\n"
-"                                    <li>Ailelerin birkaç ay ya da yıl ile "
-"birbirinden ayrılmış birden fazla test oturumlarını içerebilecek boylamsal "
-"çalışmalara devam edebilmesi kolaylaşsın</li>\n"
-"                                    <li>Çocuklar yabancı bir yerde değil "
-"evlerinde oldukları için daha doğal davranışlar gözlemleyin</li>\n"
-"                                    <li>Özel popülasyonları öğrenmek için "
-"bir sistem oluşturun--örneğin, belirli gelişimsel bozuklukları olan "
-"çocuklar</li>\n"
-"                                    <li>Araştırma yaparken kullandığımız "
-"prosedürleri daha şeffaf hale getirin ve bulgularımızı replike etmeyi "
-"kolaylaştırın</li>\n"
-"                                    <li>Yaptığımız araştırma ve bu "
-"araştırmadan ne öğrenebileceğimiz hakkında ailelerle iletişim kurun</li>\n"
-"                                </ul>"
-
-#: web/templates/frontpages/faq.html:206
-msgid "When will we see the results of the study?"
-msgstr "Çalışmanın sonuçlarını ne zaman göreceğiz?"
-
-#: web/templates/frontpages/faq.html:211
-msgid ""
-"The process of publishing a scientific study, from starting data collection "
-"to seeing the paper in a journal, can take several years. You can check the "
-"Lookit home page for updates on papers, or set your communication "
-"preferences to be notified when we have results from studies you "
-"participated in."
-msgstr ""
-"Veri toplamaya başlamaktan makaleyi bir dergide görmeye kadar bilimsel bir "
-"çalışma yayınlama süreci birkaç yıl sürebilir. Belgelerle ilgili "
-"güncellemeler için Lookit ana sayfasını kontrol edebilir veya katıldığınız "
-"çalışmalardan sonuçlar aldığımızda bilgilendirilmek üzere iletişim "
-"tercihlerinizi ayarlayabilirsiniz."
-
-#: web/templates/frontpages/faq.html:218
+#: web/templates/frontpages/faq.html:320
 msgid ""
 "My child wasn't paying attention, or we were interrupted. Can we try the "
 "study again?"
@@ -1858,7 +2086,7 @@ msgstr ""
 "Çocuğum dikkatini vermiyor, veya kesintiye uğradık. Çalışmayı yeniden "
 "deneyebilir miyiz?"
 
-#: web/templates/frontpages/faq.html:223
+#: web/templates/frontpages/faq.html:327
 msgid ""
 "Certainly--thanks for your dedication! You may see a warning that you have "
 "already participated in the study when you go to try it again, but you can "
@@ -1870,14 +2098,14 @@ msgstr ""
 "görmezden gelebilirsiniz. Çalışmayı daha önce denediğinizi bize söylemenize "
 "gerek yok; önceki katılımınızın bir kaydını alacağız."
 
-#: web/templates/frontpages/faq.html:230
+#: web/templates/frontpages/faq.html:336
 msgid ""
 "My child is outside the age range. Can he/she still participate in this "
 "study?"
 msgstr ""
 "Çocuğum yaş aralığının dışında kalıyor. Bu çalışmaya yine de katılabilir mi?"
 
-#: web/templates/frontpages/faq.html:235
+#: web/templates/frontpages/faq.html:343
 msgid ""
 "Sure! We may not be able to use his or her data in our research directly, "
 "but if you're curious you're welcome to try the study anyway. (Sometimes big "
@@ -1891,11 +2119,11 @@ msgstr ""
 "çocuğunuzun yaşı bir çalışma için minimum yaşın hemen altındaysa beklemenizi "
 "öneririz, bu sayede verileri kullanabiliriz."
 
-#: web/templates/frontpages/faq.html:242
+#: web/templates/frontpages/faq.html:352
 msgid "My child was born prematurely. Should we use his/her adjusted age?"
 msgstr "Çocuğum prematüre doğdu. Düzeltilmiş yaşını mı kullanmalıyız?"
 
-#: web/templates/frontpages/faq.html:247
+#: web/templates/frontpages/faq.html:359
 msgid ""
 "For study eligibility, we usually use the child's chronological age (time "
 "since birth), even for premature babies. If adjusted age is important for a "
@@ -1906,14 +2134,14 @@ msgstr ""
 "çalışma için düzeltilmiş yaş önemliyse, bunu çalışmaya uygunluk "
 "kriterlerinde açıklığa kavuşturacağız."
 
-#: web/templates/frontpages/faq.html:254
+#: web/templates/frontpages/faq.html:368
 msgid ""
 "Our family speaks a language other than English at home. Can my child "
 "participate?"
 msgstr ""
 "Ailemiz evde İngilizce dışında bir dil konuşuyor. Çocuğum katılabilir mi? "
 
-#: web/templates/frontpages/faq.html:259
+#: web/templates/frontpages/faq.html:375
 msgid ""
 "Sure! Right now, instructions for children and parents are written only in "
 "English, so some of them may be confusing to a child who does not hear "
@@ -1931,7 +2159,7 @@ msgstr ""
 "soracağız. Ayrıca demografik ankette çocuğunuzun konuştuğu veya öğrenmekte "
 "olduğu dilleri belirtebilirsiniz. "
 
-#: web/templates/frontpages/faq.html:266
+#: web/templates/frontpages/faq.html:384
 msgid ""
 "My child has been diagnosed with a developmental disorder or has special "
 "needs. Can he/she still participate?"
@@ -1939,7 +2167,7 @@ msgstr ""
 "Çocuğuma gelişimsel bir bozukluk teşhisi kondu veya özel ihtiyaçları var. "
 "Yine de katılabilir mi?"
 
-#: web/templates/frontpages/faq.html:271
+#: web/templates/frontpages/faq.html:390
 msgid ""
 "\n"
 "                                <p>Of course! We're interested in how all "
@@ -1966,7 +2194,7 @@ msgstr ""
 "onun için zor olabilir. Yapabiliyorsanız, lütfen resimleri açıklayarak veya "
 "işaret dili kullanarak yardımcı olmaktan çekinmeyin.</p>"
 
-#: web/templates/frontpages/faq.html:281
+#: web/templates/frontpages/faq.html:401
 msgid ""
 "I have multiple children in the age range for a study. Can they participate "
 "together?"
@@ -1974,7 +2202,7 @@ msgstr ""
 "Çalışmanın yaş aralığında olan birden fazla çocuğum var. Birlikte "
 "katılabilirler mi?"
 
-#: web/templates/frontpages/faq.html:286
+#: web/templates/frontpages/faq.html:408
 msgid ""
 "If possible, we ask that each child participate separately. When children "
 "participate together they generally influence each other. That's a "
@@ -1985,12 +2213,12 @@ msgstr ""
 "katıldıklarında genellikle birbirlerini etkilerler. Bu başlı başına "
 "büyüleyici bir konu ama genellikle araştırmamızın odak noktası değildir."
 
-#: web/templates/frontpages/faq.html:293
+#: web/templates/frontpages/faq.html:417
 msgid "But I've heard that young children should avoid 'screen time.'"
 msgstr ""
 "Fakat küçük çocukların 'ekran süresi'nden kaçınması gerektiğini duydum."
 
-#: web/templates/frontpages/faq.html:298
+#: web/templates/frontpages/faq.html:423
 msgid ""
 "\n"
 "                                <p>We agree with the American Academy of "
@@ -2018,11 +2246,11 @@ msgstr ""
 "de işe koyuluyoruz—kendi küçük çocuklarımız çalışmalarımızla ilgili çok "
 "sayıda geri bildirim sağlıyor!</p>"
 
-#: web/templates/frontpages/faq.html:308
+#: web/templates/frontpages/faq.html:434
 msgid "Will we be paid for our participation?"
 msgstr "Katılımımız için bize ödeme yapılacak mı?"
 
-#: web/templates/frontpages/faq.html:313
+#: web/templates/frontpages/faq.html:441
 msgid ""
 "Some research groups provide gift cards or other compensation for completing "
 "their studies, and others rely on volunteers. (This often depends on the "
@@ -2034,79 +2262,126 @@ msgstr ""
 "araştırmayı yapan üniversitenin kurallarına bağlıdır.) Bu bilgiler "
 "çalışmanın açıklama sayfasında listelenecektir."
 
-#: web/templates/frontpages/faq.html:320
-msgid "Can I get my child's results?"
-msgstr "Çocuğumun sonuçlarını alabilir miyim?"
+#: web/templates/frontpages/faq.html:450
+msgid "Can I learn the results of the research my child does?"
+msgstr ""
 
-#: web/templates/frontpages/faq.html:325
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "                                <p>For some studies, yes! Usually, "
-#| "developmental researchers only interpret children's abilities and "
-#| "developmental trends at a group level, and the individual data collected "
-#| "just isn't very interpretable. But for \"Your baby, the physicist\" and "
-#| "other longitudinal studies (where you come back for more than one "
-#| "session), we can sometimes collect enough data to give you a report of "
-#| "your child's responses after you complete all the sessions.</p>\n"
-#| "                                <p>Please note that none of the measures "
-#| "we collect are diagnostic! For instance, while we hope you'll be "
-#| "interested to learn that your child looked 70%% of the time at videos "
-#| "where things fell up versus falling down, we won't be able to tell you "
-#| "whether this means your child is going to be especially good at physics.</"
-#| "p>\n"
-#| "                                <p>If you're interested in getting "
-#| "individual results right away, please see our <a "
-#| "href='resources'>Resources</a> section for fun at-home activities you can "
-#| "try with your child.</p>\n"
-#| "                                "
+#: web/templates/frontpages/faq.html:456
+#, python-format
 msgid ""
 "\n"
-"                                <p>For some studies, yes! Usually, "
-"developmental researchers only interpret children's abilities and "
-"developmental trends at a group level, and the individual data collected "
-"just isn't very interpretable. But for \"Your baby, the physicist\" and "
-"other longitudinal studies (where you come back for more than one session), "
-"we can sometimes collect enough data to give you a report of your child's "
-"responses after you complete all the sessions.</p>\n"
-"                                <p>Please note that none of the measures we "
-"collect are diagnostic! For instance, while we hope you'll be interested to "
-"learn that your child looked 70%% of the time at videos where things fell up "
-"versus falling down, we won't be able to tell you whether this means your "
-"child is going to be especially good at physics.</p>\n"
+"                                <p>You should expect to get an explanation "
+"about the purpose of every study you participate in when you consent to the "
+"study. At the end of the study, especially when it is a video chat, you "
+"should have a chance to ask any questions you like.</p>\n"
+"                                <p>In general though, the goal of research "
+"studies is to learn about children in general, not any particular child. "
+"Thus, the information we get is usually not appropriate for making diagnoses "
+"or assessing the performance of individuals. For instance, while it might be "
+"interesting to learn that your child looked 70%% of the time at videos where "
+"things fell up versus falling down today, we won't be able to tell you "
+"whether this means your child is going to be especially good at physics.</"
+"p>\n"
 "                                <p>If you're interested in getting "
 "individual results right away, please see our <a href='resources'>Resources</"
 "a> section for fun at-home activities you can try with your child.</p>\n"
+"                                <p>Researchers usually aim to share the "
+"general results of studies in scientific journals (e.g., “The majority of "
+"three-year-olds chose option A; the majority of five-year-olds chose option "
+"B.\"). You can click <a href = \"https://childrenhelpingscience.com/"
+"publications\">here</a> to see some examples of scientific research "
+"published with data collected online with children.</p>\n"
+"                                <p>There can be a long lag between "
+"conducting a study and publication -- your five-year-olds might be eight-"
+"year-olds before the results are in press! So in addition to scientific "
+"publications, many of the labs that post studies on this website have ways "
+"for parents to sign up to receive updates. You can also set your "
+"communication preferences to be notified by Lookit when we have results from "
+"studies you participated in.</p>\n"
 "                                "
 msgstr ""
-"\n"
-"                                <p>Bazı çalışmalar için, evet! Genellikle, "
-"gelişim araştırmacıları çocukların becerilerini ve gelişimsel trendleri "
-"yalnızca grup seviyesinde yorumlar, ve toplanan bireysel veriler pek "
-"yorumlanamaz. Ancak “Fizikçi Bebeğiniz” çalışması ve diğer boylamsal (birden "
-"fazla oturum için geri geldiğiniz) çalışmalarda bazen siz tüm seansları "
-"tamamladıktan sonra çocuğunuzun yanıtları hakkında size bir rapor vermek "
-"için yeterli veri toplayabiliyoruz.</p>\n"
-"                                <p>Lütfen topladığımız ölçümlerin hiçbirinin "
-"teşhis amaçlı olmadığını unutmayın! Örneğin, çocuğunuzun nesnelerin yukarı "
-"doğru düştüğü (aşağı doğru düşmek yerine) videolarda zamanın %70’inde ekranı "
-"izlediğini öğrenmek ilginizi çekebilir, ancak size çocuğunuzun özellikle "
-"fizik dersinde başarılı olup olamayacağını söyleyebileceğimiz anlamına "
-"gelmez.</p>\n"
-"                                <p>Eğer hemen bireysel sonuçlar almakla "
-"ilgileniyorsanız, lütfen çocuğunuzla birlikte deneyebileceğiniz evde "
-"eğlenceli aktiviteler için <a href='resources'>Kaynaklar</a> bölümüne bakın."
-"</p>"
 
-#: web/templates/frontpages/faq.html:335
+#: web/templates/frontpages/faq.html:470
+msgid "I love this. How do I share this site?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:476
+msgid ""
+"\n"
+"                                <p>Become a parent ambassador! One of the "
+"biggest challenges in developmental research is reaching families like you. "
+"With more children, we can also answer more sophisticated questions -- "
+"including questions about individual differences, the ways many different "
+"factors can interact to affect outcomes. Families like yours can help us "
+"make our science more representative and more reliable. </p>\n"
+"                                <p>If you like what you are doing, please "
+"share this website (<a href = \"https://lookit.mit.edu\">https://lookit.mit."
+"edu</a>), with our sincere thanks. Research on child development would be "
+"impossible without the support of parents like you.</p>\n"
+"                                "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:487
+msgid "What is the Parent Researcher Collaborative (PaRC)?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:493
+msgid ""
+"\n"
+"                                <p>If you are a parent who has participated "
+"with your child in a study on this website, or a university-based researcher "
+"who has posted a study on this website, then we consider you a member of the "
+"Parent Researcher Collaborative!</p>\n"
+"                                <p>If you are asking who runs this website, "
+"the answer is that we are a collaboration between two projects for online "
+"studies with children, Lookit and Children Helping Science. Lookit was "
+"founded by <a href = \"https://kimberscott.github.io/\">Kim Scott</a> and <a "
+"href = \"http://eccl.mit.edu/\">Laura Schulz</a> at MIT, and is now lead by "
+"Executive Director <a href = \"http://www.melissaklinestruhl.com/\">Melissa "
+"Kline Struhl</a>.  The original Children Helping Science website was created "
+"by <a href = \"https://projects.iq.harvard.edu/ccdlab\">Elizabeth Bonawitz</"
+"a> at Harvard, <a href = \"http://sll.stanford.edu/\">Hyowon Gweon</a> at "
+"Stanford, <a href = \"https://compdevlab.yale.edu/\">Julian Jara-Ettinger</"
+"a> at Yale, <a href = \"https://www.utdallas.edu/thinklab/\">Candice Mills</"
+"a> at UT Dallas, <a href = \"http://eccl.mit.edu/\">Laura Schulz</a> at MIT, "
+"and <a href = \"https://www.minerva.kgi.edu/people/mark-sheskin-phd/\">Mark "
+"Sheskin</a> at Minerva University. Mark did the web development (based on an "
+"initial design by Junyi Chu, a student in Laura's lab) and the logo was "
+"designed by Natalia Vélez, a student in Hyowon's lab. </p>\n"
+"                                <p>We decided it would be nice for there to "
+"be one place online where parents and researchers could go to connect with "
+"each other to support research into child development!</p>\n"
+"                                "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:505
+msgid "How can I contact you?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:511
+msgid ""
+"\n"
+"                                <p>For information about individual studies, "
+"please see the \"study details\" page, which will always include contact "
+"information for the lab running that study. </p>\n"
+"                                <p>If you want to get in touch with the "
+"researchers organizing this website, you can reach us by email at <a href="
+"\"mailto:lookit@mit.edu\">lookit@mit.edu</a>.</p>\n"
+"                                <p>To report any technical difficulties "
+"during participation, please contact our team by email at <a href=\"mailto:"
+"lookit-tech@mit.edu\">lookit@mit.edu</a>.</p>\n"
+"                                "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:522
 msgid "Technical"
 msgstr "Teknik"
 
-#: web/templates/frontpages/faq.html:339
+#: web/templates/frontpages/faq.html:528
 msgid "What browsers are supported?"
 msgstr "Hangi tarayıcılar destekleniyor?"
 
-#: web/templates/frontpages/faq.html:344
+#: web/templates/frontpages/faq.html:535
 msgid ""
 "Lookit supports recent versions of Chrome and Firefox. We are not currently "
 "able to support Internet Explorer or Safari."
@@ -2114,17 +2389,29 @@ msgstr ""
 "Lookit Chrome ve Firefox'un güncel versiyonlarını destekler. Şu anda Safari "
 "ve Internet Explorer'ı destekleyemiyoruz."
 
-#: web/templates/frontpages/faq.html:351
+#: web/templates/frontpages/faq.html:544
 msgid "Can we do a study on my phone or tablet?"
 msgstr "Telefon veya tabletimden çalışma yapabilir miyiz?"
 
-#: web/templates/frontpages/faq.html:357
+#: web/templates/frontpages/faq.html:550
+#, fuzzy
+#| msgid ""
+#| "Not yet! Because we're measuring kids' looking patterns, we need a "
+#| "reasonably stable view of their eyes and a big enough screen that we can "
+#| "tell whether they're looking at the left or the right side of it. We're "
+#| "excited about the potential for touchscreen studies that allow us to "
+#| "observe infants and toddlers exploring, though!"
 msgid ""
-"Not yet! Because we're measuring kids' looking patterns, we need a "
+"\n"
+"                                <p>Most studies require a laptop or desktop "
+"with a webcam. Because we're measuring kids' looking patterns, we need a "
 "reasonably stable view of their eyes and a big enough screen that we can "
 "tell whether they're looking at the left or the right side of it. We're "
 "excited about the potential for touchscreen studies that allow us to observe "
-"infants and toddlers exploring, though!"
+"infants and toddlers exploring, though!</p>\n"
+"                                <p>Some studies, especially surveys meant "
+"for older children and teens, may work on your phone or tablet - the study "
+"description should mention this if so.</p>\n"
 msgstr ""
 "Henüz değil! Çocukların bakış modellerini ölçtüğümüz için, gözlerinin "
 "oldukça dengeli bir görüntüsüne ve soluna mı yoksa sağına mı baktıklarını "
@@ -2132,70 +2419,171 @@ msgstr ""
 "keşfeden bebekleri ve küçük çocukları gözlemlememizi sağlayan dokunmatik "
 "ekran çalışmalarının potansiyeli bizi heyecanlandırıyor!"
 
+#: web/templates/frontpages/faq.html:561
+msgid "My study isn't working, what can I do?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:567
+msgid ""
+"\n"
+"                                <p>If you are trying to participate in a "
+"study and having difficulties, please start by contacting the researchers "
+"who made that specific study.  If you still need help, you can also reach "
+"the Lookit team for help at <a href=\"mailto:lookit-tech@mit.edu\">lookit-"
+"tech@mit.edu</a>.</p>\n"
+"                                <p>If you are a researcher working on "
+"creating a study, you can find help in our <a href=\"https://lookit."
+"readthedocs.io/en/develop/index.html\">documentation</a>, and in our <a href "
+"= \"https://docs.google.com/forms/d/e/1FAIpQLScI2h7G6aUSJb-"
+"I3fGHw2nB8HcuaomuNLiwta2CXhGGF2ZL-Q/viewform\">Slack community</a>.</p>\n"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:578
+#, fuzzy
+#| msgid "What state do you live in?"
+msgid "What security measures do you implement?"
+msgstr "Hangi ilde yaşıyorsunuz?"
+
+#: web/templates/frontpages/faq.html:584
+msgid ""
+"\n"
+"                                <p>Here at Lookit we are very concerned "
+"about protecting your and your children's data, and our software is designed "
+"to take advantage of up-to-date security measures. You can read a bit about "
+"how we do this in our <a href = \"https://lookit.readthedocs.io/en/develop/"
+"community-irb-and-legal-information.html#sub-processors-and-information-"
+"about-gdpr-compliance-dpas\">documentation</a>, and an updated HECVAT is "
+"available by emailing <a href=\"mailto:lookit@mit.edu\">lookit@mit.edu</a>.</"
+"p>\n"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:593
+#, fuzzy
+#| msgid "For researchers"
+msgid "For Researchers"
+msgstr "Araştırmacılar için"
+
+#: web/templates/frontpages/faq.html:599
+msgid "How can I list my study?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:605
+msgid ""
+"\n"
+"                                <p>In order to list your study on this "
+"website, you first will need to have your institution sign a contract with "
+"MIT where they agree to the <a href=\"https://lookit.mit.edu/termsofuse"
+"\">Terms of Use</a> and certify that their studies will be reviewed and "
+"approved by an institutional review board. You will also need to edit your "
+"IRB protocol to include online testing, or submit a new protocol for your "
+"proposed online study.</p>\n"
+"                                <p>As of January 2022, we have agreements "
+"with over 50 universities, including institutions in the United States, "
+"Canada, the United Kingdom, and European Union. Please email <a href="
+"\"mailto:lookit-tech@mit.edu\">lookit@mit.edu</a> if you are not sure "
+"whether your institution already has an agreement, or if you need any help "
+"at all getting your paperwork in order.</p>\n"
+"                                <p>While you are completing these steps, you "
+"can get started on Lookit by creating a lab account, creating your first "
+"study, and getting it peer reviewed by our researcher community. A step-by-"
+"step guide to getting started is available <a href=\"https://lookit."
+"readthedocs.io/en/develop/researchers-start-here.html\">here</a>.</p>\n"
+"                                "
+msgstr ""
+
+#: web/templates/frontpages/faq.html:617
+msgid ""
+"Where can I discuss best practices for online research with other "
+"researchers?"
+msgstr ""
+
+#: web/templates/frontpages/faq.html:623
+#, python-format
+msgid ""
+"\n"
+"                                <p>Lookit has a <a href = \"https://docs."
+"google.com/forms/d/e/1FAIpQLScI2h7G6aUSJb-I3fGHw2nB8HcuaomuNLiwta2CXhGGF2ZL-"
+"Q/viewform\">Slack community</a> for researchers to ask for help, conduct "
+"peer review, and discuss online research methods.</p>\n"
+"                                <p>The Society for Research in Child "
+"Development also has a <a href = \"https://commons.srcd.org/communities/"
+"community-home/digestviewer/viewthread?CommunityKey=bd3d326e-b7db-49bf-"
+"abbb-73642ac0576c&GroupId=109&MessageKey=0871d623-bd97-48c5-"
+"b8e4-54ecda9de9d8&ReturnUrl=%%2Fcommunities%%2Fcommunity-home%%2Fdigestviewer"
+"%%3Fcommunitykey%%3Dbd3d326e-b7db-49bf-abbb-73642ac0576c%%26tab"
+"%%3Ddigestviewer&tab=digestviewer\">discussion forum</a> you might check out!"
+"</p>\n"
+msgstr ""
+
 #: web/templates/frontpages/home.html:11
-msgid "the online child lab"
-msgstr "çevrimiçi çocuk laboratuvarı"
+msgid "Powered by Lookit"
+msgstr ""
 
 #: web/templates/frontpages/home.html:12
-msgid "A project of the MIT Early Childhood Cognition Lab"
-msgstr "MIT Erken Çocukluk Biliş Lab'ı projesi"
+msgid "Fun for Families, Serious for Science"
+msgstr ""
 
-#: web/templates/frontpages/home.html:12
+#: web/templates/frontpages/home.html:15
 msgid "Participate in a Study"
 msgstr "Katılım"
 
-#: web/templates/frontpages/home.html:22
-msgid "Bringing science home"
-msgstr "Bilimi eve getiriyoruz"
-
-#: web/templates/frontpages/home.html:23
-msgid ""
-"Here at MIT's Early Childhood Cognition Lab, we're trying a new approach in "
-"developmental psychology: bringing the experiments to you."
+#: web/templates/frontpages/home.html:25
+msgid "Help Science"
 msgstr ""
-"MIT'nin Erken Çocukluk Biliş Laboratuvarı'nda gelişim psikolojisinde yeni "
-"bir yaklaşım deniyoruz: deneyleri size getirmek."
 
-#: web/templates/frontpages/home.html:29
-msgid "Help us understand how your child thinks"
-msgstr "Çocuğunuzun nasıl düşündüğünü anlamamızda bize yardımcı olun"
-
-#: web/templates/frontpages/home.html:30
+#: web/templates/frontpages/home.html:27
 msgid ""
-"Your family can contribute to research about how children learn by doing fun "
-"activities together, right in your web browser."
+"This website has studies you and your child can participate in from your "
+"home, brought to you by researchers from universities around the world!"
 msgstr ""
-"Aileniz, doğrudan web tarayıcınızdan birlikte eğlenceli aktiviteler yaparak "
-"çocukların nasıl öğrendiklerine ilişkin araştırmalara katkıda bulunabilir."
+
+#: web/templates/frontpages/home.html:34
+#, fuzzy
+#| msgid "Home"
+msgid "From Home"
+msgstr "Anasayfa"
 
 #: web/templates/frontpages/home.html:36
-msgid "Participate whenever and wherever"
-msgstr "Her zaman ve her yerde katılın"
-
-#: web/templates/frontpages/home.html:37
 msgid ""
-"Log in or create an account at the top right to get started! You can "
-"participate with your child from any computer with a webcam."
+"You and your child use your computer to participate. Some studies can also "
+"be done on a tablet or phone."
 msgstr ""
-"Başlamak için giriş yapın veya sağ üstten bir hesap oluşturun! Çocuğunuzla "
-"birlikte  kamerası olan herhangi bir bilgisayardan katılabilirsiniz."
+
+#: web/templates/frontpages/home.html:43
+msgid "With Fun Activities"
+msgstr ""
+
+#: web/templates/frontpages/home.html:45
+msgid ""
+"Many studies are either short games, or listening to a story and answering "
+"questions about it. Some are available at any time, and others are a "
+"scheduled video chat with a researcher."
+msgstr ""
 
 #: web/templates/frontpages/privacy.html:11
 msgid "Privacy statement"
 msgstr "Gizlilik Beyanı"
 
-#: web/templates/frontpages/privacy.html:17
+#: web/templates/frontpages/privacy.html:16
 msgid "Introduction"
 msgstr "Giriş"
 
 #: web/templates/frontpages/privacy.html:18
+#, fuzzy
+#| msgid ""
+#| "Lookit is committed to supporting the privacy of individuals who enroll "
+#| "on our Platform to conduct\n"
+#| "                research or serve as research subjects. This Privacy "
+#| "Statement explains how we handle and use the\n"
+#| "                personal information we collect about our researchers and "
+#| "research participant community."
 msgid ""
 "Lookit is committed to supporting the privacy of individuals who enroll on "
 "our Platform to conduct\n"
 "                research or serve as research subjects. This Privacy "
 "Statement explains how we handle and use the\n"
-"                personal information we collect about our researchers and "
-"research participant community."
+"personal information we collect about our researchers and research "
+"participant community."
 msgstr ""
 "Lookit, araştırma yürütmek veya araştırma öznesi olarak görev almak için\n"
 "               Platformumuza kaydolan kişilerin mahremiyetini desteklemeye "
@@ -2209,6 +2597,15 @@ msgid "For participants"
 msgstr "Katılımcılar için"
 
 #: web/templates/frontpages/privacy.html:24
+#, fuzzy
+#| msgid ""
+#| "Lookit is a platform that many different researchers use to conduct "
+#| "studies about how children learn and\n"
+#| "                develop. It is run by the MIT Early Childhood Cognition "
+#| "Lab, which has access to all of the data\n"
+#| "                collected on Lookit. Researchers using Lookit to conduct "
+#| "studies only access your personal information\n"
+#| "                if you choose to participate in their study."
 msgid ""
 "Lookit is a platform that many different researchers use to conduct studies "
 "about how children learn and\n"
@@ -2216,7 +2613,7 @@ msgid ""
 "which has access to all of the data\n"
 "                collected on Lookit. Researchers using Lookit to conduct "
 "studies only access your personal information\n"
-"                if you choose to participate in their study."
+"if you choose to participate in their study."
 msgstr ""
 "Lookit, pek çok farklı araştırmacının çocukların nasıl öğrendiği ve "
 "geliştiği konusunda araştırmalar yapmak için kullandığı bir platformdur.\n"
@@ -2226,7 +2623,7 @@ msgstr ""
 "kişisel bilgilerinize yalnızca çalışmalarına katılmayı seçerseniz erişirler."
 
 #: web/templates/frontpages/privacy.html:29
-#: web/templates/frontpages/privacy.html:142
+#: web/templates/frontpages/privacy.html:149
 msgid "What personal information we collect"
 msgstr "Hangi kişisel bilgileri topluyoruz"
 
@@ -2234,7 +2631,27 @@ msgstr "Hangi kişisel bilgileri topluyoruz"
 msgid "We collect the following kinds of personal information:"
 msgstr "Aşağıdaki kişisel bilgileri topluyoruz:"
 
-#: web/templates/frontpages/privacy.html:32
+#: web/templates/frontpages/privacy.html:33
+#, fuzzy
+#| msgid ""
+#| "<ul>\n"
+#| "                <li>Account data: basic contact information that may "
+#| "include your email address, nickname, mailing\n"
+#| "                    address, and contact preferences.</li>\n"
+#| "                <li>Child data: basic biographical information about your "
+#| "child(ren), including nickname, date of birth,\n"
+#| "                    and gestational age at birth.</li>\n"
+#| "                <li>Demographic data: background and biographical "
+#| "information such as your native language, race, age,\n"
+#| "                    educational background, and family history of "
+#| "particular medical conditions.</li>\n"
+#| "                <li>Study data: responses collected during particular "
+#| "studies conducted on Lookit, including webcam\n"
+#| "                    video of your family participating in the study, text "
+#| "entered in forms, the particular images that\n"
+#| "                    were shown, the timing of progression through the "
+#| "study, etc.</li>\n"
+#| "            </ul>"
 msgid ""
 "<ul>\n"
 "                <li>Account data: basic contact information that may include "
@@ -2253,7 +2670,7 @@ msgid ""
 "entered in forms, the particular images that\n"
 "                    were shown, the timing of progression through the study, "
 "etc.</li>\n"
-"            </ul>"
+"</ul>"
 msgstr ""
 "<ul>\n"
 "                <li>Hesap verileri: e-mail adresinizi, takma adınızı, posta "
@@ -2272,7 +2689,7 @@ msgstr ""
 "            </ul>"
 
 #: web/templates/frontpages/privacy.html:44
-#: web/templates/frontpages/privacy.html:147
+#: web/templates/frontpages/privacy.html:154
 msgid "How we collect personal information about you"
 msgstr "Sizin hakkınızdaki kişisel bilgileri nasıl topluyoruz"
 
@@ -2291,7 +2708,7 @@ msgstr ""
 "bireysel Lookit çalışmalarına katılırken bize sağladığınız bilgilerdir."
 
 #: web/templates/frontpages/privacy.html:50
-#: web/templates/frontpages/privacy.html:167
+#: web/templates/frontpages/privacy.html:175
 msgid "When we share your personal information"
 msgstr "Kişisel bilgilerinizi ne zaman paylaşıyoruz"
 
@@ -2304,10 +2721,21 @@ msgstr ""
 "aşağıdaki bilgileri paylaşıyoruz:"
 
 #: web/templates/frontpages/privacy.html:54
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "            <ul>\n"
+#| "                <li>Your account data </li>\n"
+#| "                <li>The child data for the child who is participating</"
+#| "li>\n"
+#| "                <li>Your demographic data</i>\n"
+#| "                <li>The study data for this particular study session</"
+#| "li>\n"
+#| "            </ul>"
 msgid ""
 "\n"
 "            <ul>\n"
-"                <li>Your account data </li>\n"
+"                <li>Your account data</li>\n"
 "                <li>The child data for the child who is participating</li>\n"
 "                <li>Your demographic data</i>\n"
 "                <li>The study data for this particular study session</li>\n"
@@ -2321,7 +2749,7 @@ msgstr ""
 "                <li>Bu çalışma oturumuna özel çalışma verileri</li>\n"
 "            </ul>"
 
-#: web/templates/frontpages/privacy.html:61
+#: web/templates/frontpages/privacy.html:62
 msgid ""
 "Your email address is not shared directly with the research group, although "
 "they can contact you via Lookit in accordance with your contact preferences."
@@ -2330,13 +2758,20 @@ msgstr ""
 "tercihlerinize uygun olarak sizinle Lookit aracılığıyla iletişim "
 "kurabilirler."
 
-#: web/templates/frontpages/privacy.html:63
+#: web/templates/frontpages/privacy.html:65
+#, fuzzy
+#| msgid ""
+#| "Researchers may publish the results of a study, including individual "
+#| "responses. However, although they\n"
+#| "                may publish the ages of participants, they may not "
+#| "publish participant birthdates (or information that\n"
+#| "                could be used to calculate birthdates)."
 msgid ""
 "Researchers may publish the results of a study, including individual "
 "responses. However, although they\n"
 "                may publish the ages of participants, they may not publish "
 "participant birthdates (or information that\n"
-"                could be used to calculate birthdates)."
+"could be used to calculate birthdates)."
 msgstr ""
 "Araştırmacılar, bireysel yanıtlar da dahil olmak üzere bir çalışmanın "
 "sonuçlarını yayınlayabilirler. Ancak,\n"
@@ -2344,7 +2779,21 @@ msgstr ""
 "doğum tarihlerini  (veya doğum tarihlerini hesaplamak \n"
 "                için kullanılabilecek bilgileri) yayınlayamazlar."
 
-#: web/templates/frontpages/privacy.html:67
+#: web/templates/frontpages/privacy.html:70
+#, fuzzy
+#| msgid ""
+#| "We and/or the researchers responsible for a study may share video of your "
+#| "family’s participation for\n"
+#| "                scientific, educational, and/or publicity purposes, but "
+#| "only if you choose at the conclusion of a study\n"
+#| "                to allow such usage. Researchers may also share your "
+#| "video and other data with Databrary if you choose\n"
+#| "                at the conclusion of a study to allow that. We don’t "
+#| "publish video of participants such that it can be\n"
+#| "                linked to individual demographic data (e.g., household "
+#| "income or number of parents/guardians), and\n"
+#| "                researchers must also agree not to do so in order to use "
+#| "Lookit."
 msgid ""
 "We and/or the researchers responsible for a study may share video of your "
 "family’s participation for\n"
@@ -2356,8 +2805,7 @@ msgid ""
 "video of participants such that it can be\n"
 "                linked to individual demographic data (e.g., household "
 "income or number of parents/guardians), and\n"
-"                researchers must also agree not to do so in order to use "
-"Lookit."
+"researchers must also agree not to do so in order to use Lookit."
 msgstr ""
 "Biz ve / veya bir araştırmadan sorumlu araştırmacılar, ailenizin katılımının "
 "videosunu bilimsel, eğitimsel ve / veya tanıtım amaçlı paylaşabilir, ancak "
@@ -2371,7 +2819,7 @@ msgstr ""
 "                araştırmacılar da Lookit'i kullanmak için bunu yapmamayı "
 "kabul etmelidir."
 
-#: web/templates/frontpages/privacy.html:74
+#: web/templates/frontpages/privacy.html:78
 msgid ""
 "We don’t share, sell, publish, or otherwise disclose your contact "
 "information (email and/or mailing\n"
@@ -2386,12 +2834,12 @@ msgstr ""
 "Lookit'i kullanmak için\n"
 "                 iletişim bilgileriniz ifşa etmemeyi kabul etmelidir."
 
-#: web/templates/frontpages/privacy.html:78
-#: web/templates/frontpages/privacy.html:152
+#: web/templates/frontpages/privacy.html:82
+#: web/templates/frontpages/privacy.html:159
 msgid "How we use your personal information"
 msgstr "Kişisel bilgilerinizi nasıl kullanıyoruz"
 
-#: web/templates/frontpages/privacy.html:80
+#: web/templates/frontpages/privacy.html:84
 msgid ""
 "We may use your personal information (account, child, demographic, and study "
 "data) for a variety of purposes, including to:"
@@ -2399,7 +2847,36 @@ msgstr ""
 "Kişisel bilgilerinizi (hesap, çocuk, demografik ve çalışma verileri) şunlar "
 "dahil çeşitli amaçlar için kullanabiliriz:"
 
-#: web/templates/frontpages/privacy.html:81
+#: web/templates/frontpages/privacy.html:86
+#, fuzzy
+#| msgid ""
+#| "<ul>\n"
+#| "                <li>Provide you with the research studies you have "
+#| "enrolled in, and information about which studies your\n"
+#| "                    children are eligible for</li>\n"
+#| "                <li>Send you information about studies you may be "
+#| "interested in, reminders to participate in multi-part\n"
+#| "                    studies, and/or results of studies you have "
+#| "participated in, subject to your contact preferences\n"
+#| "                </li>\n"
+#| "                <li>Improve the Lookit platform: e.g., detect and fix "
+#| "technical problems or identify new features that\n"
+#| "                    would be helpful</li>\n"
+#| "                <li>Develop data analysis tools for Lookit researchers </"
+#| "li>\n"
+#| "                <li>Provide technical support to study researchers</li>\n"
+#| "                <li>Assess the quality of data collected on the platform "
+#| "(e.g., how well an observer can tell which\n"
+#| "                    direction children are looking)</li>\n"
+#| "                <li>Evaluate recruitment and family engagement efforts (e."
+#| "g., see how many participants come from rural\n"
+#| "                    vs. urban areas)</li>\n"
+#| "                <li>Recruit participants or researchers to use Lookit (e."
+#| "g., sharing a short video clip of your child\n"
+#| "                    having fun – ONLY if you have chosen to allow use of "
+#| "the video for publicity)</li>\n"
+#| "            </ul>\n"
+#| "            "
 msgid ""
 "<ul>\n"
 "                <li>Provide you with the research studies you have enrolled "
@@ -2413,8 +2890,7 @@ msgid ""
 "                <li>Improve the Lookit platform: e.g., detect and fix "
 "technical problems or identify new features that\n"
 "                    would be helpful</li>\n"
-"                <li>Develop data analysis tools for Lookit researchers </"
-"li>\n"
+"                <li>Develop data analysis tools for Lookit researchers</li>\n"
 "                <li>Provide technical support to study researchers</li>\n"
 "                <li>Assess the quality of data collected on the platform (e."
 "g., how well an observer can tell which\n"
@@ -2427,7 +2903,6 @@ msgid ""
 "                    having fun – ONLY if you have chosen to allow use of the "
 "video for publicity)</li>\n"
 "            </ul>\n"
-"            "
 msgstr ""
 "<ul>\n"
 "                <li>Kaydolduğunuz araştırmalar ve çocuklarınızın hangi "
@@ -2455,7 +2930,7 @@ msgstr ""
 "            </ul>\n"
 "            "
 
-#: web/templates/frontpages/privacy.html:100
+#: web/templates/frontpages/privacy.html:105
 msgid ""
 "Researchers use the data collected in their studies to address particular "
 "scientific questions. It may\n"
@@ -2476,7 +2951,7 @@ msgstr ""
 "çevrimiçi tamamlayıcı oturuma katılıyorsanız- bunu çalışma onay formunda "
 "size söylemelidirler."
 
-#: web/templates/frontpages/privacy.html:106
+#: web/templates/frontpages/privacy.html:112
 msgid ""
 "There are some basic rules about how personal information may be used that "
 "all Lookit researchers agree to, including:"
@@ -2485,7 +2960,7 @@ msgstr ""
 "kişisel bilgilerin nasıl kullanılabileceğine ilişkin bazı temel kurallar "
 "vardır:"
 
-#: web/templates/frontpages/privacy.html:107
+#: web/templates/frontpages/privacy.html:114
 msgid ""
 "\n"
 "            <ul>\n"
@@ -2507,8 +2982,8 @@ msgstr ""
 "            </ul>\n"
 "            "
 
-#: web/templates/frontpages/privacy.html:114
-#: web/templates/frontpages/privacy.html:163
+#: web/templates/frontpages/privacy.html:122
+#: web/templates/frontpages/privacy.html:171
 msgid ""
 "If you have concerns about any of these purposes, or how we communicate with "
 "you, please contact us at\n"
@@ -2522,12 +2997,12 @@ msgstr ""
 "durdurma isteğinize her zaman saygı duyacağız\n"
 "                 (yasal yükümlülüklerimize tabidir)."
 
-#: web/templates/frontpages/privacy.html:118
-#: web/templates/frontpages/privacy.html:171
+#: web/templates/frontpages/privacy.html:126
+#: web/templates/frontpages/privacy.html:179
 msgid "How your information is stored and secured"
 msgstr "Bilgileriniz nasıl saklanır ve gizli tutulur"
 
-#: web/templates/frontpages/privacy.html:120
+#: web/templates/frontpages/privacy.html:128
 #, fuzzy, python-format
 #| msgid ""
 #| "We have implemented industry-standard security safeguards designed to "
@@ -2585,12 +3060,26 @@ msgstr ""
 "Kullanıcı adınız ve şifreniz dahil olmak üzere hesap detaylarınızın "
 "güvenliğini korumak sizin sorumluluğunuzdadır."
 
-#: web/templates/frontpages/privacy.html:131
-#: web/templates/frontpages/privacy.html:182
+#: web/templates/frontpages/privacy.html:139
+#: web/templates/frontpages/privacy.html:190
 msgid "How long we keep your personal information"
 msgstr "Kişisel bilgilerinizi ne kadar süre saklıyoruz"
 
-#: web/templates/frontpages/privacy.html:133
+#: web/templates/frontpages/privacy.html:141
+#, fuzzy
+#| msgid ""
+#| "We consider our relationship with our research community to be lifelong. "
+#| "This means that we will maintain\n"
+#| "                a record for you until such time as you tell us that you "
+#| "no longer wish us to keep in touch. If you wish\n"
+#| "                to remove your account, we will retain a core set of "
+#| "information about you to fulfill administrative\n"
+#| "                tasks and legal obligations. If you have participated in "
+#| "Lookit studies, the personal information\n"
+#| "                already shared with those researchers may not generally "
+#| "be ‘taken back,’ as it is part of a scientific\n"
+#| "                dataset and removing your data could affect already "
+#| "published findings."
 msgid ""
 "We consider our relationship with our research community to be lifelong. "
 "This means that we will maintain\n"
@@ -2602,8 +3091,7 @@ msgid ""
 "Lookit studies, the personal information\n"
 "                already shared with those researchers may not generally be "
 "‘taken back,’ as it is part of a scientific\n"
-"                dataset and removing your data could affect already "
-"published findings."
+"dataset and removing your data could affect already published findings."
 msgstr ""
 "Araştırma topluluğumuzla ilişkimizin ömür boyu süreceğini düşünüyoruz. Bu, "
 "iletişimde kalmamızı istemediğinizi söyleyene kadar sizin için bir kaydı "
@@ -2614,19 +3102,25 @@ msgstr ""
 "parçası olduğundan ve verilerinizin kaldırılması önceden yayınlanmış "
 "bulguları etkileyebileceğinden, genellikle \"geri alınamayabilir\"."
 
-#: web/templates/frontpages/privacy.html:144
+#: web/templates/frontpages/privacy.html:151
+#, fuzzy
+#| msgid ""
+#| "We may collect basic biographic/contact information about you and your "
+#| "representative organization,\n"
+#| "                including name, title, business addresses, phone numbers, "
+#| "and email addresses."
 msgid ""
 "We may collect basic biographic/contact information about you and your "
 "representative organization,\n"
-"                including name, title, business addresses, phone numbers, "
-"and email addresses."
+"including name, title, business addresses, phone numbers, and email "
+"addresses."
 msgstr ""
 "Siz ve temsilci kuruluşunuz hakkındaki temel biyografik/ iletişim "
 "bilgilerini toplayabiliriz,\n"
 "                 ad, unvan, iş adresleri, telefon numaraları ve email "
 "adresleri dahil."
 
-#: web/templates/frontpages/privacy.html:149
+#: web/templates/frontpages/privacy.html:156
 msgid ""
 "The information we collect and maintain about you is that which you have "
 "provided to us when registering\n"
@@ -2637,7 +3131,7 @@ msgstr ""
 "                kayıt olurken, profilinizi güncellerken veya bir çalışma "
 "oluştururken ya da düzenlerken bize sağladığınız bilgilerdir."
 
-#: web/templates/frontpages/privacy.html:154
+#: web/templates/frontpages/privacy.html:161
 msgid ""
 "We use your personal information for a number of legitimate purposes, "
 "including the performance of contractual obligations. Specifically, we use "
@@ -2647,18 +3141,29 @@ msgstr ""
 "dahil olmak üzere bir dizi meşru amaç için kullanıyoruz. Kişisel "
 "bilgilerinizi özellikle şu amaçlarla kullanırız:"
 
-#: web/templates/frontpages/privacy.html:155
+#: web/templates/frontpages/privacy.html:163
+#, fuzzy
+#| msgid ""
+#| "<ul>\n"
+#| "                <li>Provide you with the research services for which you "
+#| "have enrolled. </li>\n"
+#| "                <li>Perform administrative tasks and for internal record "
+#| "keeping purposes.</li>\n"
+#| "                <li>Create and analyze aggregated (fully anonymized) "
+#| "information about our users for statistical\n"
+#| "                    research purposes in support of our mission.</li>\n"
+#| "            </ul>\n"
+#| "            "
 msgid ""
 "<ul>\n"
 "                <li>Provide you with the research services for which you "
-"have enrolled. </li>\n"
+"have enrolled.</li>\n"
 "                <li>Perform administrative tasks and for internal record "
 "keeping purposes.</li>\n"
 "                <li>Create and analyze aggregated (fully anonymized) "
 "information about our users for statistical\n"
 "                    research purposes in support of our mission.</li>\n"
 "            </ul>\n"
-"            "
 msgstr ""
 " <ul>\n"
 "                <li>Kaydolduğunuz araştırmalar için araştırma hizmetlerini "
@@ -2671,11 +3176,11 @@ msgstr ""
 "            </ul>\n"
 "            "
 
-#: web/templates/frontpages/privacy.html:169
+#: web/templates/frontpages/privacy.html:177
 msgid "We do not share your personal information with any third parties."
 msgstr "Kişisel bilgilerinizi üçüncü partilerle paylaşmayız."
 
-#: web/templates/frontpages/privacy.html:173
+#: web/templates/frontpages/privacy.html:181
 #, fuzzy, python-format
 #| msgid ""
 #| "We have implemented industry-standard security safeguards designed to "
@@ -2722,7 +3227,7 @@ msgstr ""
 "Kullanıcı adınız ve şifreniz dahil olmak üzere hesap detaylarınızın "
 "güvenliğini korumak sizin sorumluluğunuzdadır."
 
-#: web/templates/frontpages/privacy.html:184
+#: web/templates/frontpages/privacy.html:192
 msgid ""
 "We consider our relationship with our research community to be lifelong. "
 "This means that we will maintain\n"
@@ -2738,15 +3243,15 @@ msgstr ""
 "istemiyorsanız, idari görevleri ve yasal yükümlülükleri yerine getirmek için "
 "sizinle ilgili temel bilgileri saklayacağız."
 
-#: web/templates/frontpages/privacy.html:189
+#: web/templates/frontpages/privacy.html:197
 msgid "For everyone"
 msgstr "Herkes için"
 
-#: web/templates/frontpages/privacy.html:191
+#: web/templates/frontpages/privacy.html:198
 msgid "Rights for individuals in the European Economic Area"
 msgstr "Avrupa Ekonomik Bölgesindeki bireylerin hakları"
 
-#: web/templates/frontpages/privacy.html:192
+#: web/templates/frontpages/privacy.html:200
 msgid ""
 "You have the right in certain circumstances to (1) access your personal "
 "information; (2) to correct or\n"
@@ -2767,7 +3272,7 @@ msgstr ""
 "                Ayrıca ulusal veya bölgesel veri koruma kurumunuza şikayette "
 "bulunma hakkına da sahipsiniz."
 
-#: web/templates/frontpages/privacy.html:198
+#: web/templates/frontpages/privacy.html:207
 msgid ""
 "If you are inclined to exercise these rights, we request an opportunity to "
 "discuss with you any concerns\n"
@@ -2798,7 +3303,7 @@ msgstr ""
 "ilişkin haklarımızı tesis etmek, savunmak veya kullanmak amacıyla "
 "saklayabiliriz."
 
-#: web/templates/frontpages/privacy.html:207
+#: web/templates/frontpages/privacy.html:217
 msgid ""
 "By providing information directly to Lookit, you consent to the transfer of "
 "your personal information\n"
@@ -2816,7 +3321,7 @@ msgstr ""
 "düzeyde \n"
 "                 koruma sağlamayabileceğini bilmelisiniz."
 
-#: web/templates/frontpages/privacy.html:212
+#: web/templates/frontpages/privacy.html:223
 msgid ""
 "You are under no statutory or contractual obligation to provide any personal "
 "data to us."
@@ -2824,11 +3329,11 @@ msgstr ""
 "Bize herhangi bir kişisel veri sağlama konusunda hiçbir yasal veya "
 "sözleşmeye dayalı yükümlülük altında değilsiniz."
 
-#: web/templates/frontpages/privacy.html:214
+#: web/templates/frontpages/privacy.html:226
 msgid "Additional Information"
 msgstr "Ek Bilgi"
 
-#: web/templates/frontpages/privacy.html:216
+#: web/templates/frontpages/privacy.html:229
 msgid ""
 "We may change this Privacy Statement from time to time. If we make any "
 "significant changes in the way we\n"
@@ -2840,7 +3345,7 @@ msgstr ""
 "                 önemli bir değişiklik yaparsak bunu web sitemizde veya "
 "sizinle doğrudan iletişime geçerek açıklığa kavuşturacağız."
 
-#: web/templates/frontpages/privacy.html:220
+#: web/templates/frontpages/privacy.html:233
 msgid ""
 "The controller for your personal information is MIT. We can be contacted at "
 "dataprotection@mit.edu."
@@ -2848,120 +3353,80 @@ msgstr ""
 "Kişisel bilgilerinizin denetleyicisi MIT'dir. Bize dataprotection@mit.edu. "
 "adresinden ulaşabilirsiniz."
 
-#: web/templates/frontpages/privacy.html:222
+#: web/templates/frontpages/privacy.html:236
 msgid "This policy was last updated in June 2018."
 msgstr "Anlaşma şartları en son Haziran 2018'de güncellenmiştir."
 
-#: web/templates/frontpages/scientists.html:27
+#: web/templates/frontpages/scientists.html:41
 msgid "Meet the Lookit team"
 msgstr "Lookit ekibiyle tanışın"
 
-#: web/templates/frontpages/scientists.html:33
-msgid "Core Team"
-msgstr "Çekirdek Ekip"
-
-#: web/templates/frontpages/scientists.html:38
-msgid ""
-"Rico is Lookit's lead software engineer, working on planning and adding "
-"features for both participants and researchers."
-msgstr ""
-"Rico Lookit'in lider yazılım mühendisidir, hem katılımcılar hem de "
-"araştırmacılar için yeni özellikler planlama ve ekleme üzerine çalışıyor."
-
-#: web/templates/frontpages/scientists.html:43
-msgid ""
-"Laura is the PI of the Early Childhood Cognition Lab. She conducts research "
-"about how children arrive at a common-sense understanding of the physical "
-"and social world through exploration and instruction."
-msgstr ""
-"Laura, Erken Çocukluk Biliş Laboratuvarı'nın baş araştırmacısıdır. Keşif ve "
-"öğretim yoluyla çocukların fiziksel ve sosyal dünyanın sağduyulu bir "
-"anlayışına nasıl ulaştıkları hakkında araştırma yapıyor."
-
-#: web/templates/frontpages/scientists.html:49
-msgid ""
-"Kim started Lookit as a graduate student, and now runs the project as a "
-"research scientist in the Early Childhood Cognition Lab. Her three children "
-"frequently provide feedback on studies."
-msgstr ""
-"Kim, Lookit'e yüksek lisans öğrencisi olarak başladı ve şimdi projeyi Erken "
-"Çocukluk Biliş Laboratuvarı'nda araştırmacı bilim insanı olarak yürütüyor. "
-"Üç çocuğu, çalışmaları hakkında sık sık geri bildirimde bulunuyor."
-
-#: web/templates/frontpages/scientists.html:54
-msgid ""
-"Mark organizes the Lookit Working Groups, which are groups of researchers "
-"working to improve Lookit in a variety of ways."
-msgstr ""
-"Mark Lookit Çalışma Gruplarını organize ediyor, bu gruplar Lookit'in çeşitli "
-"yollardan geliştirilmesi için çalışan araştırmacılardan oluşur."
-
-#: web/templates/registration/logged_out.html:6
+#: web/templates/registration/logged_out.html:5
 msgid "You've successfully logged out."
 msgstr "Başarılı bir şekilde çıkış yaptınız."
 
-#: web/templates/registration/login.html:8
-#: web/templates/web/studies-history.html:9
-#: web/templates/web/studies-list.html:9 web/templates/web/study-detail.html:22
+#: web/templates/registration/login.html:9
+#: web/templates/web/studies-list.html:12
+#: web/templates/web/study-detail.html:22
 msgid "Your login credentials didn't work. Please try again."
 msgstr "Giriş kimlik bilgileriniz çalışmadı. Lütfen tekrar deneyin."
 
-#: web/templates/registration/login.html:18
-#: web/templates/registration/login.html:25
-#: web/templates/web/_navigation.html:45
+#: web/templates/registration/login.html:19
+#: web/templates/registration/login.html:27
 msgid "Login"
 msgstr "Giriş yap"
 
-#: web/templates/registration/login.html:34
+#: web/templates/registration/login.html:36
 msgid "Forgot password?"
 msgstr "Şifrenizi mi unuttunuz?"
 
-#: web/templates/registration/login.html:36
+#: web/templates/registration/login.html:39
 msgid "New to Lookit?"
 msgstr "Lookit'te yeni misiniz?"
 
-#: web/templates/registration/login.html:36
+#: web/templates/registration/login.html:39
 msgid "Register your family!"
 msgstr "Ailenizi kaydedin!"
 
-#: web/templates/registration/password_change_done.html:11
+#: web/templates/registration/password_change_done.html:9
 msgid "Password changed"
 msgstr "Şifre değiştirildi"
 
-#: web/templates/registration/password_change_done.html:15
+#: web/templates/registration/password_change_done.html:13
 msgid "Your password was changed."
 msgstr "Şifreniz değiştirildi."
 
-#: web/templates/registration/password_change_form.html:4
+#: web/templates/registration/password_change_form.html:12
 msgid "Documentation"
 msgstr "Belgeler"
 
-#: web/templates/registration/password_change_form.html:4
+#: web/templates/registration/password_change_form.html:14
 msgid "Change password"
 msgstr "Şifreyi değiştir"
 
-#: web/templates/registration/password_change_form.html:4
+#: web/templates/registration/password_change_form.html:14
 msgid "Log out"
 msgstr "Çıkış yap"
 
-#: web/templates/registration/password_change_form.html:7
-#: web/templates/web/home.html:3 web/templates/web/home.html:7
+#: web/templates/registration/password_change_form.html:18
+#: web/templates/web/_navigation.html:19 web/templates/web/home.html:3
+#: web/templates/web/home.html:6
 msgid "Home"
 msgstr "Anasayfa"
 
-#: web/templates/registration/password_change_form.html:8
+#: web/templates/registration/password_change_form.html:19
 msgid "Password change"
 msgstr "Şifre değiştirme"
 
-#: web/templates/registration/password_change_form.html:21
+#: web/templates/registration/password_change_form.html:36
 msgid "Please correct the error below."
 msgstr "Lütfen aşağıdaki hatayı düzeltiniz."
 
-#: web/templates/registration/password_change_form.html:21
+#: web/templates/registration/password_change_form.html:38
 msgid "Please correct the errors below."
 msgstr "Lütfen aşağıdaki hataları düzeltiniz."
 
-#: web/templates/registration/password_change_form.html:26
+#: web/templates/registration/password_change_form.html:43
 msgid ""
 "Please enter your old password, for security's sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
@@ -2969,28 +3434,28 @@ msgstr ""
 "Lütfen güvenlik için eski şifrenizi girin ve daha sonra yeni şifrenizi doğru "
 "yazdığınızı onaylayabilmemiz için iki kez girin."
 
-#: web/templates/registration/password_change_form.html:54
+#: web/templates/registration/password_change_form.html:63
 #: web/templates/registration/password_reset_confirm.html:31
 msgid "Change my password"
 msgstr "Şifremi değiştir"
 
-#: web/templates/registration/password_reset_complete.html:11
+#: web/templates/registration/password_reset_complete.html:9
 msgid "Password reset complete"
 msgstr "Şifre sıfırlama tamamlandı"
 
-#: web/templates/registration/password_reset_complete.html:15
+#: web/templates/registration/password_reset_complete.html:13
 msgid "Your password has been set.  You may go ahead and log in now."
 msgstr "Şifreniz oluşturuldu. Şimdi giriş yapabilirsiniz."
 
-#: web/templates/registration/password_reset_complete.html:17
+#: web/templates/registration/password_reset_complete.html:16
 msgid "Log in"
 msgstr "Giriş yap"
 
-#: web/templates/registration/password_reset_confirm.html:11
+#: web/templates/registration/password_reset_confirm.html:9
 msgid "Password reset confirmation"
 msgstr "Şifre sıfırlama onayı"
 
-#: web/templates/registration/password_reset_confirm.html:17
+#: web/templates/registration/password_reset_confirm.html:14
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
@@ -2998,15 +3463,15 @@ msgstr ""
 "Lütfen doğru yazdığınızı onaylayabilmemiz için yeni şifrenizi iki kez "
 "giriniz."
 
-#: web/templates/registration/password_reset_confirm.html:23
+#: web/templates/registration/password_reset_confirm.html:21
 msgid "New password:"
 msgstr "Yeni şifre:"
 
-#: web/templates/registration/password_reset_confirm.html:28
+#: web/templates/registration/password_reset_confirm.html:26
 msgid "Confirm password:"
 msgstr "Şifrenizi onaylayın:"
 
-#: web/templates/registration/password_reset_confirm.html:37
+#: web/templates/registration/password_reset_confirm.html:36
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
@@ -3014,11 +3479,11 @@ msgstr ""
 "Şifre sıfırlama bağlantısı geçersizdir çünkü muhtemelen daha önce "
 "kullanıldı. Lütfen yeni bir şifre sıfırlama isteği gönderin."
 
-#: web/templates/registration/password_reset_done.html:11
+#: web/templates/registration/password_reset_done.html:9
 msgid "Password reset link sent"
 msgstr "Şifre sıfırlama linki gönderildi"
 
-#: web/templates/registration/password_reset_done.html:15
+#: web/templates/registration/password_reset_done.html:13
 msgid ""
 "If an account exists with the email you entered, we've emailed instructions "
 "for resetting your password and you should receive them shortly."
@@ -3026,7 +3491,7 @@ msgstr ""
 "Eğer girdiğiniz email ile bir hesap mevcutsa, şifre sıfırlama yönergelerini "
 "size email ile gönderdik bu emaili kısa sürede almış olmalısınız."
 
-#: web/templates/registration/password_reset_done.html:17
+#: web/templates/registration/password_reset_done.html:16
 msgid ""
 "If you don't receive an email, please check your spam folder and make sure "
 "you've entered the address you registered with. (You won't get an email "
@@ -3036,7 +3501,7 @@ msgstr ""
 "olduğunuz email adresini girdiğinizden emin olun. (Eğer o email adresi için "
 "bir hesap mevcut değilse email almayacaksınız!)"
 
-#: web/templates/registration/password_reset_email.html:2
+#: web/templates/registration/password_reset_email.html:3
 #, fuzzy, python-format
 #| msgid ""
 #| "You're receiving this email because you requested a password reset for "
@@ -3056,21 +3521,21 @@ msgstr "Lütfen bir sonraki sayfaya gidin ve yeni bir şifre seçin:"
 msgid "Your username, in case you've forgotten:"
 msgstr "Kullanıcı adınız, unuttuysanız:"
 
-#: web/templates/registration/password_reset_email.html:10
+#: web/templates/registration/password_reset_email.html:9
 msgid "Thanks for using our site!"
 msgstr "Sitemizi kullandığınız için teşekkürler!"
 
-#: web/templates/registration/password_reset_email.html:12
+#: web/templates/registration/password_reset_email.html:10
 #, fuzzy, python-format
 #| msgid "The %(site_name)s team"
 msgid "The %(site_name)s team"
 msgstr "%(site_name)nın takımı"
 
-#: web/templates/registration/password_reset_form.html:11
+#: web/templates/registration/password_reset_form.html:9
 msgid "Password reset"
 msgstr "Şifre sıfırlama"
 
-#: web/templates/registration/password_reset_form.html:15
+#: web/templates/registration/password_reset_form.html:13
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll email "
 "instructions for setting a new one."
@@ -3078,127 +3543,142 @@ msgstr ""
 "Şifrenizi mi unuttunuz? Aşağıya e-mailinizi girin, size yeni bir şifre "
 "belirlemeniz için yönergeleri mail atalım."
 
-#: web/templates/registration/password_reset_form.html:21
+#: web/templates/registration/password_reset_form.html:20
 msgid "Email address:"
 msgstr "Email adresi:"
 
-#: web/templates/registration/password_reset_form.html:24
+#: web/templates/registration/password_reset_form.html:25
 msgid "Reset my password"
 msgstr "Şifremi sıfırla"
 
-#: web/templates/web/_navigation.html:17
+#: web/templates/web/_navigation.html:23
 msgid "Experimenter"
 msgstr "Deneyci"
-
-#: web/templates/web/_navigation.html:28 web/templates/web/studies-list.html:4
-msgid "Studies"
-msgstr "Çalışmalar"
-
-#: web/templates/web/_navigation.html:29
-msgid "FAQ"
-msgstr "SSS"
-
-#: web/templates/web/_navigation.html:30
-msgid "The Scientists"
-msgstr "Bilim insanları"
-
-#: web/templates/web/_navigation.html:31
-msgid "Resources"
-msgstr "Kaynaklar"
-
-#: web/templates/web/_navigation.html:40
-msgid "Hi"
-msgstr "Merhaba"
 
 #: web/templates/web/_navigation.html:42
 msgid "Logout"
 msgstr "Çıkış yap"
 
-#: web/templates/web/_navigation.html:44
-msgid "Sign up"
-msgstr "Kayıt ol"
-
-#: web/templates/web/child-update.html:4
-#: web/templates/web/studies-history.html:116
-msgid "Child"
-msgstr "Çocuk"
-
-#: web/templates/web/child-update.html:26
-msgid "Back to Children List"
-msgstr "Çocuk Listesi'ne Geri Dön"
-
-#: web/templates/web/child-update.html:31
-msgid "Update"
-msgstr "Güncelle"
-
-#: web/templates/web/child-update.html:41
-msgid "Delete"
-msgstr "Sil"
-
-#: web/templates/web/child-update.html:44
-#: web/templates/web/children-list.html:92
-#: web/templates/web/demographic-data-update.html:100
-#: web/templates/web/participant-email-preferences.html:36
-msgid "Cancel"
-msgstr "İptal et"
-
-#: web/templates/web/children-list.html:40
+#: web/templates/web/child-add.html:38
 msgid "Empty birthday"
 msgstr "Doğum tarihi boş"
 
-#: web/templates/web/children-list.html:47
+#: web/templates/web/child-add.html:45
 msgid " day"
 msgstr "gün"
 
-#: web/templates/web/children-list.html:47
+#: web/templates/web/child-add.html:45
 msgid " days"
 msgstr "günler"
 
-#: web/templates/web/children-list.html:49
+#: web/templates/web/child-add.html:47
 msgid " month"
 msgstr "ay"
 
-#: web/templates/web/children-list.html:49
+#: web/templates/web/child-add.html:47
 msgid " months"
 msgstr "aylar"
 
-#: web/templates/web/children-list.html:51
+#: web/templates/web/child-add.html:49
 msgid " year"
 msgstr "yıl"
 
-#: web/templates/web/children-list.html:51
+#: web/templates/web/child-add.html:49
 msgid " years"
 msgstr "yıllar"
 
-#: web/templates/web/children-list.html:61
-#: web/templates/web/children-list.html:77
-#: web/templates/web/children-list.html:82
-#: web/templates/web/children-list.html:94
+#: web/templates/web/child-add.html:59 web/templates/web/child-add.html:71
+#: web/templates/web/child-add.html:82
 msgid "Add Child"
 msgstr "Çocuk Ekle"
 
-#: web/templates/web/children-list.html:61
-#: web/templates/web/children-list.html:77
+#: web/templates/web/child-add.html:59
 msgid "Hide Form"
 msgstr "Formu Gizle"
 
-#: web/templates/web/children-list.html:111
+#: web/templates/web/child-add.html:81 web/templates/web/child-update.html:35
+#: web/templates/web/demographic-data-update.html:61
+#: web/templates/web/participant-email-preferences.html:28
+msgid "Cancel"
+msgstr "İptal et"
+
+#: web/templates/web/child-update.html:6
+#: web/templates/web/studies-history.html:101
+msgid "Child"
+msgstr "Çocuk"
+
+#: web/templates/web/child-update.html:19
+msgid "Back to Children List"
+msgstr "Çocuk Listesi'ne Geri Dön"
+
+#: web/templates/web/child-update.html:24
+msgid "Update"
+msgstr "Güncelle"
+
+#: web/templates/web/child-update.html:33
+msgid "Delete"
+msgstr "Sil"
+
+#: web/templates/web/child-update.html:36
+#: web/templates/web/demographic-data-update.html:62
+#: web/templates/web/participant-email-preferences.html:29
+msgid "Save"
+msgstr "Kaydet"
+
+#: web/templates/web/children-list.html:43
 msgid "Name"
 msgstr "İsim"
 
-#: web/templates/web/children-list.html:121
+#: web/templates/web/children-list.html:55
 msgid "Update child"
 msgstr "Çocuk bilgisini güncelle"
 
-#: web/templates/web/children-list.html:128
+#: web/templates/web/children-list.html:64
 msgid "No child profiles registered!"
 msgstr "Hiçbir çocuk profili kaydedilmedi!"
 
-#: web/templates/web/demographic-data-update.html:4
+#: web/templates/web/demographic-data-update.html:6
 msgid "Update demographics"
 msgstr "Demografikleri güncelle"
 
-#: web/templates/web/demographic-data-update.html:89
+#: web/templates/web/demographic-data-update.html:22
+msgid "If the \\"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:25
+msgid "You can click the \\"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:26
+msgid "click here"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:27
+msgid "to review the requirements for"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:33
+msgid ""
+"Welcome to Children Helping Science! Before you take your first study, we "
+"are asking you to share some information about your family."
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:37
+msgid ""
+"Welcome to Children Helping Science! Before you continue to the main study"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:37
+msgid "we are asking you to share some information about your family."
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:41
+msgid ""
+"Use this form to share more information about your family. When you are "
+"ready to move on, you can click the \\"
+msgstr ""
+
+#: web/templates/web/demographic-data-update.html:45
 msgid ""
 "One reason we are developing Internet-based experiments is to represent a "
 "more diverse group of families in our research. Your answers to these "
@@ -3212,7 +3692,7 @@ msgstr ""
 "konuşmak veya kendinden büyük kardeş sahibi olmak gibi faktörlerin "
 "çocukların öğrenmesini nasıl etkilediğini anlamamızı sağlayacak."
 
-#: web/templates/web/demographic-data-update.html:90
+#: web/templates/web/demographic-data-update.html:48
 msgid ""
 "Even if you allow your study videos to be published for scientific or "
 "publicity purposes, your demographic information is never published in "
@@ -3222,133 +3702,124 @@ msgstr ""
 "verseniz bile, demografik bilgileriniz asla videonuzla bağlantılı olarak "
 "yayınlanmaz."
 
-#: web/templates/web/participant-email-preferences.html:27
+#: web/templates/web/participant-email-preferences.html:19
 msgid "I would like to be contacted when:"
 msgstr "Şu durumda iletişime geçilmesini isterim:"
 
-#: web/templates/web/participant-signup.html:18
+#: web/templates/web/participant-signup.html:15
 msgid "Create Participant Account"
 msgstr "Katılımcı Hesabı Oluştur"
 
-#: web/templates/web/participant-signup.html:22
-msgid "Create a family account to start participating in Lookit studies!"
-msgstr "Lookit çalışmalarına katılmaya başlamak için bir aile hesabı oluştur!"
+#: web/templates/web/participant-signup.html:20
+msgid "Ready to participate in a Lookit study? Create a family account here!"
+msgstr ""
 
-#: web/templates/web/participant-signup.html:31
+#: web/templates/web/participant-signup.html:23
+#, fuzzy
+#| msgid "To register as a researcher, please use"
+msgid "To make a researcher account, please use"
+msgstr "Araştırmacı olarak kayıt olmak için, lütfen kullanın"
+
+#: web/templates/web/participant-signup.html:25
+msgid "this registration form"
+msgstr ""
+
+#: web/templates/web/participant-signup.html:26
+#, fuzzy
+#| msgid "instead"
+msgid "instead."
+msgstr "yerine"
+
+#: web/templates/web/participant-signup.html:34
 msgid ""
 "By clicking 'Create Account', I agree that I have read and accepted the "
 msgstr ""
 "'Hesap Oluştur' a tıklayarak, şunu okuduğumu ve kabul ettiğimi kabul ediyorum"
 
-#: web/templates/web/participant-signup.html:31
+#: web/templates/web/participant-signup.html:34
 msgid "Privacy Statement"
 msgstr "Gizlilik Bildirimi"
 
-#: web/templates/web/participant-signup.html:34
+#: web/templates/web/participant-signup.html:37
 msgid "Create Account"
 msgstr "Hesap oluştur"
 
-#: web/templates/web/studies-history.html:4
-#: web/templates/web/studies-history.html:27
+#: web/templates/web/studies-history.html:5
 msgid "Past Studies"
 msgstr "Geçmiş Çalışmalar"
 
-#: web/templates/web/studies-history.html:16
-#: web/templates/web/studies-list.html:16
-msgid ""
-"Your account doesn't have access to this page. To proceed, please login with "
-"an account that has access."
-msgstr ""
-"Hesabınızın bu sayfaya erişimi yok. Lütfen devam etmek için erişimi olan bir "
-"hesapla giriş yapınız."
-
-#: web/templates/web/studies-history.html:18
-#: web/templates/web/studies-list.html:18
-msgid "Please login to see this page."
-msgstr "Lütfen bu sayfayı görmek için giriş yapınız."
-
-#: web/templates/web/studies-history.html:34
-#: web/templates/web/studies-list.html:38
-msgid "Current studies"
-msgstr "Mevcut çalışmalar"
-
-#: web/templates/web/studies-history.html:37
-#: web/templates/web/studies-list.html:41
-msgid "Your past studies"
-msgstr "Geçmiş çalışmalarınız"
-
-#: web/templates/web/studies-history.html:50
+#: web/templates/web/studies-history.html:25
 msgid "Here you can view your studies and see comments left by researchers:"
 msgstr ""
 "Burada çalışmalarınızı görüntüleyebilir ve araştırmacılar tarafından yapılan "
 "yorumları görebilirsiniz."
 
-#: web/templates/web/studies-history.html:67
+#: web/templates/web/studies-history.html:44
 msgid "Study Thumbnail"
 msgstr "Çalışma Örnek Resmi"
 
-#: web/templates/web/studies-history.html:79
+#: web/templates/web/studies-history.html:56
 msgid "Eligibility:"
 msgstr "Uygunluk:"
 
-#: web/templates/web/studies-history.html:80
+#: web/templates/web/studies-history.html:58
 msgid "Contact:"
 msgstr "İletişim:"
 
-#: web/templates/web/studies-history.html:81
+#: web/templates/web/studies-history.html:60
 msgid "Still collecting data?"
 msgstr "Hala veri toplanıyor mu?"
 
-#: web/templates/web/studies-history.html:81
+#: web/templates/web/studies-history.html:62
 msgid "Yes"
 msgstr "Evet"
 
-#: web/templates/web/studies-history.html:81
+#: web/templates/web/studies-history.html:64
 msgid "No"
 msgstr "Hayır"
 
-#: web/templates/web/studies-history.html:82
+#: web/templates/web/studies-history.html:68
 msgid "Compensation: "
 msgstr "Ödeme: "
 
-#: web/templates/web/studies-history.html:87
+#: web/templates/web/studies-history.html:74
 msgid "Study Responses"
 msgstr "Çalışma Yanıtları"
 
-#: web/templates/web/studies-history.html:107
+#: web/templates/web/studies-history.html:91
 msgid "Video"
 msgstr "Video"
 
-#: web/templates/web/studies-history.html:118
+#: web/templates/web/studies-history.html:107
 msgid "Date"
 msgstr "Tarih"
 
-#: web/templates/web/studies-history.html:120
+#: web/templates/web/studies-history.html:114
 msgid "Consent status"
 msgstr "Onay durumu"
 
-#: web/templates/web/studies-history.html:123
+#: web/templates/web/studies-history.html:118
 msgid "Approved"
 msgstr "Onaylandı"
 
-#: web/templates/web/studies-history.html:123
+#: web/templates/web/studies-history.html:120
 msgid "Your consent video was reviewed by a researcher and is valid."
 msgstr ""
 "Onay videonuz araştırmacı tarafından değerlendirilmiş ve geçerli bulunmuştur."
 
-#: web/templates/web/studies-history.html:125
+#: web/templates/web/studies-history.html:122
 msgid "Pending"
 msgstr "Beklemede"
 
-#: web/templates/web/studies-history.html:125
+#: web/templates/web/studies-history.html:124
 msgid "Your consent video has not yet been reviewed by a researcher."
 msgstr "Onay videonuz henüz araştırmacı tarafından değerlendirilmedi."
 
-#: web/templates/web/studies-history.html:127
+#: web/templates/web/studies-history.html:126
 msgid "Invalid"
 msgstr "Geçersiz"
 
-#: web/templates/web/studies-history.html:127
+#: web/templates/web/studies-history.html:128
 msgid ""
 "There was a technical problem with your consent video, or it did not show "
 "you reading the consent statement out loud. Your other data from this "
@@ -3359,142 +3830,142 @@ msgstr ""
 "verileriniz çalışmadaki araştırmacılar tarafından görüntülenemeyecek veya "
 "kullanılamayacak."
 
-#: web/templates/web/studies-history.html:129
+#: web/templates/web/studies-history.html:130
 msgid "No information about consent video review status."
 msgstr "Onay videosunun değerlendirilme durumuyla ilgili bilgi bulunmuyor."
 
-#: web/templates/web/studies-history.html:133
+#: web/templates/web/studies-history.html:136
 msgid "Feedback"
 msgstr "Geri bildirim"
 
-#: web/templates/web/studies-history.html:139
+#: web/templates/web/studies-history.html:143
 msgid "None"
 msgstr "Hiçbiri"
 
-#: web/templates/web/studies-history.html:154
-msgid "You have not yet participated in any studies."
+#: web/templates/web/studies-history.html:161
+#, fuzzy
+#| msgid "You have not yet participated in any studies."
+msgid "You have not yet participated in any Lookit studies."
 msgstr "Henüz herhangi bir çalışmaya katılmadınız."
 
-#: web/templates/web/studies-list.html:32
-msgid "Current Studies"
-msgstr "Mevcut Çalışmalar"
+#: web/templates/web/studies-history.html:163
+#, fuzzy
+#| msgid "You have not yet participated in any studies."
+msgid "You have not yet participated in any external studies."
+msgstr "Henüz herhangi bir çalışmaya katılmadınız."
 
-#: web/templates/web/studies-list.html:53
+#: web/templates/web/studies-list.html:6
+msgid "Studies"
+msgstr "Çalışmalar"
+
+#: web/templates/web/studies-list.html:20
 msgid ""
-"Please note you'll need a laptop or desktop computer (not a mobile device) "
-"running Chrome or Firefox to participate."
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access."
 msgstr ""
-"Katılmak için Chrome veya Firefox çalıştıran dizüstü veya masaüstü bir "
-"bilgisayara (mobil cihaz değil) ihtiyacınız olacağına lütfen dikkat ediniz."
+"Hesabınızın bu sayfaya erişimi yok. Lütfen devam etmek için erişimi olan bir "
+"hesapla giriş yapınız."
 
-#: web/templates/web/studies-list.html:80
-msgid "See details"
-msgstr "Detayları gör"
+#: web/templates/web/studies-list.html:24
+msgid "Please login to see this page."
+msgstr "Lütfen bu sayfayı görmek için giriş yapınız."
 
-#: web/templates/web/studies-list.html:87
-msgid "We are not running any studies at this time!"
-msgstr "Şu anda herhangi bir çalışma yürütmüyoruz!"
-
-#: web/templates/web/studies-list.html:93
-msgid ""
-"Looking for more ways to contribute to research from home? Check out <a href="
-"\"https://childrenhelpingscience.com/\" target=\"_blank\" rel=\"noreferrer "
-"noopener\">Children Helping Science</a> for even more studies!"
+#: web/templates/web/studies-list.html:45
+msgid "Clear"
 msgstr ""
-"Araştırmalara evden katkıda bulunmanın daha fazla yollarını mı arıyorsunuz? "
-"Daha çok çalışma için <a href=\"https://childrenhelpingscience.com/\" target="
-"\"_blank\" rel=\"noreferrer noopener\">Children Helping Science</a> sitesine "
-"göz atın."
 
-#: web/templates/web/study-detail.html:53
-msgid "days"
-msgstr "günler"
+#: web/templates/web/studies-list.html:91
+msgid "No studies found."
+msgstr ""
 
-#: web/templates/web/study-detail.html:53
-msgid " until "
-msgstr " 'e dek "
+#: web/templates/web/studies-list.html:98
+msgid "Looking for more ways to contribute to research from home? Check out"
+msgstr ""
 
-#: web/templates/web/study-detail.html:53
-msgid " when "
-msgstr " ne zaman "
+#: web/templates/web/studies-list.html:102
+msgid "Children Helping Science"
+msgstr ""
 
-#: web/templates/web/study-detail.html:93
-msgid "Study overview"
-msgstr "Çalışma tanıtımı"
-
-#: web/templates/web/study-detail.html:96
-msgid "Back to list"
-msgstr "Listeye geri dön"
+#: web/templates/web/studies-list.html:102
+msgid "for even more studies!"
+msgstr ""
 
 #: web/templates/web/study-detail.html:112
-msgid "Eligibility criteria"
-msgstr "Uygunluk kriterleri"
+#, fuzzy
+#| msgid "Participate"
+msgid "Who Can Participate"
+msgstr "Katıl"
 
-#: web/templates/web/study-detail.html:116
+#: web/templates/web/study-detail.html:118
+#, fuzzy
+#| msgid "What happens"
+msgid "What Happens"
+msgstr "Ne oluyor"
+
+#: web/templates/web/study-detail.html:124
+#, fuzzy
+#| msgid "What we're studying"
+msgid "What We're Studying"
+msgstr "Ne çalışıyoruz"
+
+#: web/templates/web/study-detail.html:130
 msgid "Duration"
 msgstr "Süre"
 
-#: web/templates/web/study-detail.html:121
+#: web/templates/web/study-detail.html:137
 msgid "Compensation"
 msgstr "Ödeme"
 
-#: web/templates/web/study-detail.html:126
-msgid "What happens"
-msgstr "Ne oluyor"
-
-#: web/templates/web/study-detail.html:130
-msgid "What we're studying"
-msgstr "Ne çalışıyoruz"
-
-#: web/templates/web/study-detail.html:134
+#: web/templates/web/study-detail.html:144
 msgid "This study is conducted by"
 msgstr "Bu çalışma şu kişiler tarafından yürütülmektedir"
 
-#: web/templates/web/study-detail.html:138
+#: web/templates/web/study-detail.html:149
 msgid "Would you like to participate in this study?"
 msgstr "Bu çalışmaya katılmak ister misiniz?"
 
-#: web/templates/web/study-detail.html:140
-msgid "Log in to participate"
-msgstr "Katılmak için giriş yapın:"
-
-#: web/templates/web/study-detail.html:142
+#: web/templates/web/study-detail.html:156
 msgid "Add child profile to "
 msgstr "Şuraya çocuk profili ekle "
 
-#: web/templates/web/study-detail.html:142
-#: web/templates/web/study-detail.html:144
+#: web/templates/web/study-detail.html:158
+#: web/templates/web/study-detail.html:167
 msgid "preview"
 msgstr "önizleme"
 
-#: web/templates/web/study-detail.html:142
-#: web/templates/web/study-detail.html:144
+#: web/templates/web/study-detail.html:160
+#: web/templates/web/study-detail.html:169
 msgid "participate"
 msgstr "katıl"
 
-#: web/templates/web/study-detail.html:144
+#: web/templates/web/study-detail.html:165
 msgid "Complete demographic survey to "
 msgstr "Demografik anketi tamamlayın "
 
-#: web/templates/web/study-detail.html:148
+#: web/templates/web/study-detail.html:176
 msgid "Select a child:"
 msgstr "Çocuk seçin:"
 
-#: web/templates/web/study-detail.html:150
+#: web/templates/web/study-detail.html:182
 msgid "None Selected"
 msgstr "Hiçbiri seçilmedi"
 
-#: web/templates/web/study-detail.html:161
+#: web/templates/web/study-detail.html:195
+#, fuzzy
+#| msgid ""
+#| "Your child is still younger than the recommended age range for this "
+#| "study. If you can wait <span id='wait-until'>until</span> he or she is "
+#| "old enough, we'll be able to use the collected data in our research!"
 msgid ""
 "Your child is still younger than the recommended age range for this study. "
-"If you can wait <span id='wait-until'>until</span> he or she is old enough, "
-"we'll be able to use the collected data in our research!"
+"If you can wait until he or she is old enough, we'll be able to use the "
+"collected data in our research!"
 msgstr ""
 "Çocuğunuz bu çalışma için önerilen yaş aralığından küçük. Eğer çocuğunuz "
 "uygun yaş aralığına gelene <span id='wait-until'>kadar</span> "
 "bekleyebilirseniz, toplanan veriyi araştırmamızda kullanabileceğiz."
 
-#: web/templates/web/study-detail.html:162
+#: web/templates/web/study-detail.html:198
 msgid ""
 "Your child is older than the recommended age range for this study. You're "
 "welcome to try the study anyway, but we won't be able to use the collected "
@@ -3504,30 +3975,48 @@ msgstr ""
 "çalışmayı yine de deneyebilirsiniz ancak toplanan veriyi araştırmamızda "
 "kullanamayacağız."
 
-#: web/templates/web/study-detail.html:163
+#: web/templates/web/study-detail.html:201
+#, fuzzy, python-format
+#| msgid ""
+#| "Your child does not meet the eligibility criteria listed for this study. "
+#| "You're welcome to try the study anyway, but we won't be able to use the "
+#| "collected data in our research. Please contact the study researchers"
 msgid ""
-"Your child does not meet the eligibility criteria listed for this study. "
+" Your child does not meet the eligibility criteria listed for this study. "
 "You're welcome to try the study anyway, but we won't be able to use the "
-"collected data in our research. Please contact the study researchers"
+"collected data in our research. Please contact the study researchers "
+"%(contact)s if you feel this is in error. "
 msgstr ""
 "Çocuğunuz bu çalışma için belirlenen uygunluk kriterlerini karşılamıyor. "
 "İsterseniz çalışmayı yine de deneyebilirsiniz ancak toplanan veriyi "
 "araştırmamızda kullanamayacağız. Lütfen çalışma araştırmacıları ile irtibata "
 "geçiniz."
 
-#: web/templates/web/study-detail.html:165
+#: web/templates/web/study-detail.html:206
 msgid "Build experiment runner to preview"
 msgstr "Önizleme için deney oynatıcısını oluşturun."
 
-#: web/templates/web/study-detail.html:167
+#: web/templates/web/study-detail.html:213
+#, fuzzy
+#| msgid "Log in to participate"
+msgid "Schedule a time to participate"
+msgstr "Katılmak için giriş yapın:"
+
+#: web/templates/web/study-detail.html:215
+#, fuzzy
+#| msgid "preview"
+msgid "Preview"
+msgstr "önizleme"
+
+#: web/templates/web/study-detail.html:217
 msgid "Participate"
 msgstr "Katıl"
 
-#: web/templates/web/study-detail.html:167
+#: web/templates/web/study-detail.html:219
 msgid "now"
 msgstr "şimdi"
 
-#: web/templates/web/study-detail.html:168
+#: web/templates/web/study-detail.html:223
 msgid ""
 "For an easy way to see what happens as you update your study protocol, "
 "bookmark the URL the button above sends you to."
@@ -3535,31 +4024,67 @@ msgstr ""
 "Çalışma protokolünü güncellediğinizde ne olacağını kolayca görmek için "
 "yukarıdaki butonun size göndereceği bağlantıyı yer imi çubuğuna ekleyin."
 
-#: web/views.py:63
+#: web/templates/web/study-detail.html:228
+msgid "This study is being run outside of Lookit."
+msgstr ""
+
+#: web/templates/web/study-detail.html:231
+msgid ""
+"Clicking to participate via Lookit will make it possible for researchers to "
+"contact you & will share profile information with researchers."
+msgstr ""
+
+#: web/templatetags/web_extras.py:150
+msgid ""
+"Lookit is growing! We are now showing links to outside studies along with "
+"those happening here on Lookit. Use the tabs above to see activities you can "
+"do right now, or scheduled activities you can sign up for.\n"
+"\n"
+"Please note you'll need a laptop or desktop computer (not a mobile device) "
+"running Chrome or Firefox to participate, unless a specific study says "
+"otherwise."
+msgstr ""
+
+#: web/templatetags/web_extras.py:154
+msgid ""
+"You and your child can participate in these studies right now by choosing a "
+"study and then clicking \"Participate.\" Please note you'll need a laptop or "
+"desktop computer (not a mobile device) running Chrome or Firefox to "
+"participate, unless a specific study says otherwise."
+msgstr ""
+
+#: web/templatetags/web_extras.py:158
+msgid ""
+"You and your child can participate in these studies by scheduling a time to "
+"meet with a researcher (usually over video conferencing). Choose a study and "
+"then click \"Participate\" to sign up for a study session in the future."
+msgstr ""
+
+#: web/views.py:139
 msgid "Participant created."
 msgstr "Katılımcı oluşturuldu."
 
-#: web/views.py:88
+#: web/views.py:182
 msgid "Demographic data saved."
 msgstr "Demografik veri kaydedildi."
 
-#: web/views.py:156
+#: web/views.py:248
 msgid "Child added."
 msgstr "Çocuk eklendi."
 
-#: web/views.py:192
+#: web/views.py:289
 msgid "Child deleted."
 msgstr "Çocuk silindi."
 
-#: web/views.py:194
+#: web/views.py:291
 msgid "Child updated."
 msgstr "Çocuk güncellendi."
 
-#: web/views.py:217
+#: web/views.py:319
 msgid "Email preferences saved."
 msgstr "Email tercihleri kaydedildi."
 
-#: web/views.py:311
+#: web/views.py:603
 #, python-brace-format
 msgid ""
 "The study {study.name} is not currently collecting data - the study is "
@@ -3570,14 +4095,332 @@ msgstr ""
 "durduruldu. Bunun bir hata olduğunu düşünüyorsanız, lütfen {study."
 "contact_info} ile iletişime geçin."
 
+#~ msgid ""
+#~ "Your password can’t be too similar to your other personal information."
+#~ msgstr "Şifreniz diğer kişisel bilgilerinizle çok benzer olamaz. "
+
+#~ msgid "Your password must contain at least 16 characters."
+#~ msgstr "Şifreniz en az 16 karakter içermelidir."
+
+#~ msgid "Your password can’t be a commonly used password."
+#~ msgstr "Şifreniz sık kullanılan bir şifre olamaz."
+
+#~ msgid "Your password can’t be entirely numeric."
+#~ msgstr "Şifreniz tamamen sayısal olamaz."
+
+#~ msgid "What category(ies) does your family identify as?"
+#~ msgstr "Hangi kategori(ler) ailenizi tanımlıyor?"
+
+#~ msgid "Numerical answers only - a rough guess is fine!"
+#~ msgstr "Yalnızca sayısal cevaplar- kabaca bir tahmin uygundur!"
+
+#~ msgid "What language(s) does your family speak at home?"
+#~ msgstr "Aileniz evinizde hangi dil(ler)i konuşuyor?"
+
+#~ msgid "What is the highest level of education your spouse has completed?"
+#~ msgstr "Eşinizin tamamladığı en yüksek eğitim seviyesi nedir?"
+
+#~ msgid "About how many children's books are there in your home?"
+#~ msgstr "Evinizde tahmini kaç tane çocuk kitabı var?"
+
+#~ msgid ""
+#~ "If the answer varies due to shared custody arrangements or travel, please "
+#~ "enter the number of parents/guardians your children are usually living "
+#~ "with or explain."
+#~ msgstr ""
+#~ "Eğer cevabınız ortak velayet düzenlemelerine veya seyahatlere göre "
+#~ "değişiyorsa, lütfen çocuğunuzun genellikle birlikte yaşadığı ebeveyn/"
+#~ "bakıcı sayısını belirtin veya açıklayın."
+
+#~ msgid "other"
+#~ msgstr "diğer"
+
+#~ msgid "3 or more"
+#~ msgstr "3 veya daha fazla"
+
+#~ msgid "varies"
+#~ msgstr "değişiyor"
+
+#~ msgid "My Account"
+#~ msgstr "Hesabım"
+
+#~ msgid "Argentinian Spanish"
+#~ msgstr "Arjantin İspanyolcası"
+
+#~ msgid "Canadian French"
+#~ msgstr "Kanada Fransızcası"
+
+#~ msgid "Hebrew"
+#~ msgstr "İbranice"
+
+#~ msgid "Norwegian Bokmål"
+#~ msgstr "Norveççe Bokmål"
+
+#~ msgid "Brazilian Portuguese"
+#~ msgstr "Brezilya Portekizcesi"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Basitleştirilmiş Çince"
+
+#~ msgid "How can we participate online?"
+#~ msgstr "Çevrimiçi olarak nasıl katılabiliriz?"
+
+#~ msgid ""
+#~ "Any researcher with questions about how kids learn and grow can propose a "
+#~ "Lookit study! Each institution using Lookit has to sign a contract with "
+#~ "MIT where they agree to the <a href='/termsofuse'>Terms of Use</a> and "
+#~ "certify that their studies will be reviewed and approved by an "
+#~ "institutional review board. Studies are also subject to approval by "
+#~ "Lookit. As of June 2020 we have agreements with 20 universities!"
+#~ msgstr ""
+#~ "Çocukların nasıl öğrendiği ve büyüdüğü hakkında soruları olan her "
+#~ "araştırmacı bir Lookit çalışması önerebilir! Lookit kullanan her kurum "
+#~ "MIT ile <a \n"
+#~ "href='/termsofuse'> Kullanım Şartları </a> 'nı kabul ettikleri ve "
+#~ "çalışmalarının bir bağımsız etik komitesi tarafından incelenip "
+#~ "onaylanacağını kabul ettikleri bir sözleşme imzalamalıdır. Çalışmalar "
+#~ "Lookit'in de onayına tabidir. Haziran 2020 itibariyle 20 üniversite ile "
+#~ "anlaşmamız var!"
+
+#~ msgid ""
+#~ "https://storage.googleapis.com/lookit-staging/static/videos/consent.mp4"
+#~ msgstr ""
+#~ "https://storage.googleapis.com/lookit-staging/static/videos/consent.mp4"
+
+#~ msgid ""
+#~ "Traditionally, developmental studies happen in a quiet room in a "
+#~ "university lab. Researchers call or email local parents to see if they'd "
+#~ "like to take part and schedule an appointment for them to come visit the "
+#~ "lab. Why complement these in-lab studies with online ones? We're hoping "
+#~ "to..."
+#~ msgstr ""
+#~ "Geleneksel olarak, gelişim çalışmaları bir üniversite laboratuvarındaki "
+#~ "sessiz bir odada yapılır. Araştırmacılar, yer almak isteyip "
+#~ "istemediklerini öğrenmek ve bir laboratuvar ziyareti randevusu ayarlamak "
+#~ "için ebeveynleri arar veya email gönderir. Bu laboratuvar içi çalışmaları "
+#~ "neden çevrimiçi araştırmalarla tamamlamayalım? Umuyoruz ki ..."
+
+#~ msgid "When will we see the results of the study?"
+#~ msgstr "Çalışmanın sonuçlarını ne zaman göreceğiz?"
+
+#~ msgid ""
+#~ "The process of publishing a scientific study, from starting data "
+#~ "collection to seeing the paper in a journal, can take several years. You "
+#~ "can check the Lookit home page for updates on papers, or set your "
+#~ "communication preferences to be notified when we have results from "
+#~ "studies you participated in."
+#~ msgstr ""
+#~ "Veri toplamaya başlamaktan makaleyi bir dergide görmeye kadar bilimsel "
+#~ "bir çalışma yayınlama süreci birkaç yıl sürebilir. Belgelerle ilgili "
+#~ "güncellemeler için Lookit ana sayfasını kontrol edebilir veya "
+#~ "katıldığınız çalışmalardan sonuçlar aldığımızda bilgilendirilmek üzere "
+#~ "iletişim tercihlerinizi ayarlayabilirsiniz."
+
+#~ msgid "Can I get my child's results?"
+#~ msgstr "Çocuğumun sonuçlarını alabilir miyim?"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "                                <p>For some studies, yes! Usually, "
+#~| "developmental researchers only interpret children's abilities and "
+#~| "developmental trends at a group level, and the individual data collected "
+#~| "just isn't very interpretable. But for \"Your baby, the physicist\" and "
+#~| "other longitudinal studies (where you come back for more than one "
+#~| "session), we can sometimes collect enough data to give you a report of "
+#~| "your child's responses after you complete all the sessions.</p>\n"
+#~| "                                <p>Please note that none of the measures "
+#~| "we collect are diagnostic! For instance, while we hope you'll be "
+#~| "interested to learn that your child looked 70%% of the time at videos "
+#~| "where things fell up versus falling down, we won't be able to tell you "
+#~| "whether this means your child is going to be especially good at physics."
+#~| "</p>\n"
+#~| "                                <p>If you're interested in getting "
+#~| "individual results right away, please see our <a "
+#~| "href='resources'>Resources</a> section for fun at-home activities you "
+#~| "can try with your child.</p>\n"
+#~| "                                "
+#~ msgid ""
+#~ "\n"
+#~ "                                <p>For some studies, yes! Usually, "
+#~ "developmental researchers only interpret children's abilities and "
+#~ "developmental trends at a group level, and the individual data collected "
+#~ "just isn't very interpretable. But for \"Your baby, the physicist\" and "
+#~ "other longitudinal studies (where you come back for more than one "
+#~ "session), we can sometimes collect enough data to give you a report of "
+#~ "your child's responses after you complete all the sessions.</p>\n"
+#~ "                                <p>Please note that none of the measures "
+#~ "we collect are diagnostic! For instance, while we hope you'll be "
+#~ "interested to learn that your child looked 70%% of the time at videos "
+#~ "where things fell up versus falling down, we won't be able to tell you "
+#~ "whether this means your child is going to be especially good at physics.</"
+#~ "p>\n"
+#~ "                                <p>If you're interested in getting "
+#~ "individual results right away, please see our <a "
+#~ "href='resources'>Resources</a> section for fun at-home activities you can "
+#~ "try with your child.</p>\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "                                <p>Bazı çalışmalar için, evet! "
+#~ "Genellikle, gelişim araştırmacıları çocukların becerilerini ve gelişimsel "
+#~ "trendleri yalnızca grup seviyesinde yorumlar, ve toplanan bireysel "
+#~ "veriler pek yorumlanamaz. Ancak “Fizikçi Bebeğiniz” çalışması ve diğer "
+#~ "boylamsal (birden fazla oturum için geri geldiğiniz) çalışmalarda bazen "
+#~ "siz tüm seansları tamamladıktan sonra çocuğunuzun yanıtları hakkında size "
+#~ "bir rapor vermek için yeterli veri toplayabiliyoruz.</p>\n"
+#~ "                                <p>Lütfen topladığımız ölçümlerin "
+#~ "hiçbirinin teşhis amaçlı olmadığını unutmayın! Örneğin, çocuğunuzun "
+#~ "nesnelerin yukarı doğru düştüğü (aşağı doğru düşmek yerine) videolarda "
+#~ "zamanın %70’inde ekranı izlediğini öğrenmek ilginizi çekebilir, ancak "
+#~ "size çocuğunuzun özellikle fizik dersinde başarılı olup olamayacağını "
+#~ "söyleyebileceğimiz anlamına gelmez.</p>\n"
+#~ "                                <p>Eğer hemen bireysel sonuçlar almakla "
+#~ "ilgileniyorsanız, lütfen çocuğunuzla birlikte deneyebileceğiniz evde "
+#~ "eğlenceli aktiviteler için <a href='resources'>Kaynaklar</a> bölümüne "
+#~ "bakın.</p>"
+
+#~ msgid "the online child lab"
+#~ msgstr "çevrimiçi çocuk laboratuvarı"
+
+#~ msgid "A project of the MIT Early Childhood Cognition Lab"
+#~ msgstr "MIT Erken Çocukluk Biliş Lab'ı projesi"
+
+#~ msgid "Bringing science home"
+#~ msgstr "Bilimi eve getiriyoruz"
+
+#~ msgid ""
+#~ "Here at MIT's Early Childhood Cognition Lab, we're trying a new approach "
+#~ "in developmental psychology: bringing the experiments to you."
+#~ msgstr ""
+#~ "MIT'nin Erken Çocukluk Biliş Laboratuvarı'nda gelişim psikolojisinde yeni "
+#~ "bir yaklaşım deniyoruz: deneyleri size getirmek."
+
+#~ msgid "Help us understand how your child thinks"
+#~ msgstr "Çocuğunuzun nasıl düşündüğünü anlamamızda bize yardımcı olun"
+
+#~ msgid ""
+#~ "Your family can contribute to research about how children learn by doing "
+#~ "fun activities together, right in your web browser."
+#~ msgstr ""
+#~ "Aileniz, doğrudan web tarayıcınızdan birlikte eğlenceli aktiviteler "
+#~ "yaparak çocukların nasıl öğrendiklerine ilişkin araştırmalara katkıda "
+#~ "bulunabilir."
+
+#~ msgid "Participate whenever and wherever"
+#~ msgstr "Her zaman ve her yerde katılın"
+
+#~ msgid ""
+#~ "Log in or create an account at the top right to get started! You can "
+#~ "participate with your child from any computer with a webcam."
+#~ msgstr ""
+#~ "Başlamak için giriş yapın veya sağ üstten bir hesap oluşturun! "
+#~ "Çocuğunuzla birlikte  kamerası olan herhangi bir bilgisayardan "
+#~ "katılabilirsiniz."
+
+#~ msgid "Core Team"
+#~ msgstr "Çekirdek Ekip"
+
+#~ msgid ""
+#~ "Rico is Lookit's lead software engineer, working on planning and adding "
+#~ "features for both participants and researchers."
+#~ msgstr ""
+#~ "Rico Lookit'in lider yazılım mühendisidir, hem katılımcılar hem de "
+#~ "araştırmacılar için yeni özellikler planlama ve ekleme üzerine çalışıyor."
+
+#~ msgid ""
+#~ "Laura is the PI of the Early Childhood Cognition Lab. She conducts "
+#~ "research about how children arrive at a common-sense understanding of the "
+#~ "physical and social world through exploration and instruction."
+#~ msgstr ""
+#~ "Laura, Erken Çocukluk Biliş Laboratuvarı'nın baş araştırmacısıdır. Keşif "
+#~ "ve öğretim yoluyla çocukların fiziksel ve sosyal dünyanın sağduyulu bir "
+#~ "anlayışına nasıl ulaştıkları hakkında araştırma yapıyor."
+
+#~ msgid ""
+#~ "Kim started Lookit as a graduate student, and now runs the project as a "
+#~ "research scientist in the Early Childhood Cognition Lab. Her three "
+#~ "children frequently provide feedback on studies."
+#~ msgstr ""
+#~ "Kim, Lookit'e yüksek lisans öğrencisi olarak başladı ve şimdi projeyi "
+#~ "Erken Çocukluk Biliş Laboratuvarı'nda araştırmacı bilim insanı olarak "
+#~ "yürütüyor. Üç çocuğu, çalışmaları hakkında sık sık geri bildirimde "
+#~ "bulunuyor."
+
+#~ msgid ""
+#~ "Mark organizes the Lookit Working Groups, which are groups of researchers "
+#~ "working to improve Lookit in a variety of ways."
+#~ msgstr ""
+#~ "Mark Lookit Çalışma Gruplarını organize ediyor, bu gruplar Lookit'in "
+#~ "çeşitli yollardan geliştirilmesi için çalışan araştırmacılardan oluşur."
+
+#~ msgid "FAQ"
+#~ msgstr "SSS"
+
+#~ msgid "The Scientists"
+#~ msgstr "Bilim insanları"
+
+#~ msgid "Resources"
+#~ msgstr "Kaynaklar"
+
+#~ msgid "Hi"
+#~ msgstr "Merhaba"
+
+#~ msgid "Sign up"
+#~ msgstr "Kayıt ol"
+
+#~ msgid "Create a family account to start participating in Lookit studies!"
+#~ msgstr ""
+#~ "Lookit çalışmalarına katılmaya başlamak için bir aile hesabı oluştur!"
+
+#~ msgid "Current Studies"
+#~ msgstr "Mevcut Çalışmalar"
+
+#~ msgid ""
+#~ "Please note you'll need a laptop or desktop computer (not a mobile "
+#~ "device) running Chrome or Firefox to participate."
+#~ msgstr ""
+#~ "Katılmak için Chrome veya Firefox çalıştıran dizüstü veya masaüstü bir "
+#~ "bilgisayara (mobil cihaz değil) ihtiyacınız olacağına lütfen dikkat "
+#~ "ediniz."
+
+#~ msgid "See details"
+#~ msgstr "Detayları gör"
+
+#~ msgid "We are not running any studies at this time!"
+#~ msgstr "Şu anda herhangi bir çalışma yürütmüyoruz!"
+
+#~ msgid ""
+#~ "Looking for more ways to contribute to research from home? Check out <a "
+#~ "href=\"https://childrenhelpingscience.com/\" target=\"_blank\" rel="
+#~ "\"noreferrer noopener\">Children Helping Science</a> for even more "
+#~ "studies!"
+#~ msgstr ""
+#~ "Araştırmalara evden katkıda bulunmanın daha fazla yollarını mı "
+#~ "arıyorsunuz? Daha çok çalışma için <a href=\"https://"
+#~ "childrenhelpingscience.com/\" target=\"_blank\" rel=\"noreferrer noopener"
+#~ "\">Children Helping Science</a> sitesine göz atın."
+
+#~ msgid "days"
+#~ msgstr "günler"
+
+#~ msgid " until "
+#~ msgstr " 'e dek "
+
+#~ msgid " when "
+#~ msgstr " ne zaman "
+
+#~ msgid "Study overview"
+#~ msgstr "Çalışma tanıtımı"
+
+#~ msgid "Back to list"
+#~ msgstr "Listeye geri dön"
+
+#~ msgid "Eligibility criteria"
+#~ msgstr "Uygunluk kriterleri"
+
 #~ msgid "Alumni &amp; Collaborators"
 #~ msgstr "Mezunlar &amp; İşbirlikçiler"
 
-#~ msgid "To register as a researcher, please use"
-#~ msgstr "Araştırmacı olarak kayıt olmak için, lütfen kullanın"
-
 #~ msgid "this form"
 #~ msgstr "bu formu"
-
-#~ msgid "instead"
-#~ msgstr "yerine"
