@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MBAH_studiespage\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-21 11:32-0400\n"
+"POT-Creation-Date: 2022-10-03 05:10-0400\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,7 +134,9 @@ msgid "How did you hear about Lookit?"
 msgstr "Lookit'den nasıl haberdar oldunuz?"
 
 #: accounts/forms.py:307
-msgid "Which of the following best describes your family?"
+msgid ""
+"What racial group(s) do you identify with / belong to, if any? Select any "
+"that apply from the options below:"
 msgstr ""
 
 #: accounts/forms.py:310
@@ -1194,7 +1196,7 @@ msgstr "Erkek"
 msgid "Female"
 msgstr "Kadın"
 
-#: studies/models.py:131
+#: studies/models.py:132
 msgid ""
 "The Users who belong to this Lab. A user in this lab will be able to create "
 "studies associated with this Lab and can be added to this Lab's studies."
@@ -1202,7 +1204,7 @@ msgstr ""
 "Bu Lab'a ait olan kullanıcılar. Bu Labdaki kullanıcı, lab ile bağlantılı "
 "çalışmalar yaratabilecek ve bu Lab'ın çalışmalarına eklenebilecektir."
 
-#: studies/models.py:140
+#: studies/models.py:141
 msgid "The Users who have requested to join this Lab."
 msgstr "Bu Lab'a katılmayı talep eden kullanıcılar"
 
