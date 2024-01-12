@@ -15,6 +15,7 @@ from accounts.backends import TWO_FACTOR_AUTH_SESSION_KEY
 from accounts.models import Child, DemographicData, GoogleAuthenticatorTOTP, User
 from accounts.queries import (
     age_range_eligibility_for_study,
+    child_in_age_range_for_study_days_difference,
     get_child_eligibility,
     get_child_eligibility_for_study,
     get_child_participation_eligibility,
@@ -52,6 +53,7 @@ class AuthenticationTestCase(TestCase):
             name="Fake Study",
             lab=self.lab,
             shared_preview=True,
+            study_type=StudyType.get_ember_frame_player(),
         )
 
         # Participant Setup
@@ -422,7 +424,13 @@ class UserModelTestCase(TestCase):
         self.bad_email_user.save()
 
         self.lab = G(Lab, name="MIT", approved_to_test=True)
-        self.study = G(Study, name="Test Study", lab=self.lab, built=True)
+        self.study = G(
+            Study,
+            name="Test Study",
+            lab=self.lab,
+            built=True,
+            study_type=StudyType.get_ember_frame_player(),
+        )
 
         self.study.researcher_group.user_set.add(self.unaffiliated_researcher)
 
@@ -892,6 +900,66 @@ class EligibilityTestCase(TestCase):
                 "Child just above upper age bound is eligible",
             )
 
+    def test_age_range_days_difference(self):
+        lower_bound = float(
+            self.almost_one_study.min_age_years * 365
+            + self.almost_one_study.min_age_months * 30
+            + self.almost_one_study.min_age_days
+        )
+        upper_bound = float(
+            self.almost_one_study.max_age_years * 365
+            + self.almost_one_study.max_age_months * 30
+            + self.almost_one_study.max_age_days
+        )
+        self.assertEqual(
+            child_in_age_range_for_study_days_difference(
+                G(
+                    Child,
+                    birthday=datetime.date.today()
+                    - datetime.timedelta(days=lower_bound + 1),
+                ),
+                self.almost_one_study,
+            ),
+            0,
+            "Child just inside the Study's lower bound has a day difference of 0.",
+        )
+        self.assertEqual(
+            child_in_age_range_for_study_days_difference(
+                G(
+                    Child,
+                    birthday=datetime.date.today()
+                    - datetime.timedelta(days=upper_bound - 1),
+                ),
+                self.almost_one_study,
+            ),
+            0,
+            "Child just inside the Study's upper bound has a day difference of 0.",
+        )
+        self.assertEqual(
+            child_in_age_range_for_study_days_difference(
+                G(
+                    Child,
+                    birthday=datetime.date.today()
+                    - datetime.timedelta(days=lower_bound - 1),
+                ),
+                self.almost_one_study,
+            ),
+            -1,
+            "Child one day younger than Study's lower bound has a day difference of -1.",
+        )
+        self.assertEqual(
+            child_in_age_range_for_study_days_difference(
+                G(
+                    Child,
+                    birthday=datetime.date.today()
+                    - datetime.timedelta(days=upper_bound + 1),
+                ),
+                self.almost_one_study,
+            ),
+            1,
+            "Child one day older than Study's upper bound has a day difference of 1.",
+        )
+
     @parameterized.expand(
         [
             # Study 0-5 yrs, Child is 0-1 yrs
@@ -956,7 +1024,12 @@ class EligibilityTestCase(TestCase):
         )
 
     def test_get_child_eligibilty_prior_studies_success(self):
-        study = G(Study, max_age_years=2, criteria_expression="")
+        study = G(
+            Study,
+            max_age_years=2,
+            criteria_expression="",
+            study_type=StudyType.get_ember_frame_player(),
+        )
         child = G(Child, birthday=datetime.date.today())
 
         self.assertTrue(get_child_participation_eligibility(child, study))
@@ -974,6 +1047,7 @@ class EligibilityTestCase(TestCase):
             max_age_years=2,
             criteria_expression="",
             must_have_participated=[other_study],
+            study_type=StudyType.get_ember_frame_player(),
         )
         child = G(Child, birthday=datetime.date.today())
 
@@ -1040,6 +1114,7 @@ class EligibilityTestCase(TestCase):
             max_age_years=2,
             criteria_expression="",
             must_not_have_participated=[other_study],
+            study_type=StudyType.get_ember_frame_player(),
         )
         child = G(Child, birthday=datetime.date.today())
 
@@ -1066,6 +1141,7 @@ class EligibilityTestCase(TestCase):
             max_age_years=2,
             criteria_expression="",
             must_not_have_participated=[other_study],
+            study_type=StudyType.get_ember_frame_player(),
         )
         child = G(Child, birthday=datetime.date.today())
 
@@ -1092,6 +1168,7 @@ class EligibilityTestCase(TestCase):
             max_age_years=2,
             criteria_expression="",
             must_have_participated=[required_study_1, required_study_2],
+            study_type=StudyType.get_ember_frame_player(),
         )
         child = G(Child, birthday=datetime.date.today())
 
@@ -1125,6 +1202,7 @@ class EligibilityTestCase(TestCase):
             max_age_years=2,
             criteria_expression="",
             must_not_have_participated=[disallowed_study_1, disallowed_study_2],
+            study_type=StudyType.get_ember_frame_player(),
         )
         child = G(Child, birthday=datetime.date.today())
 
@@ -1161,6 +1239,7 @@ class EligibilityTestCase(TestCase):
             criteria_expression="",
             must_have_participated=[required_study],
             must_not_have_participated=[disallowed_study],
+            study_type=StudyType.get_ember_frame_player(),
         )
 
         # Child is not eligible if they meet the required study criteria but not the disallowed study criteria
@@ -1237,6 +1316,7 @@ class ParticipantViewsTestCase(TestCase):
                 "last_known_player_sha": "fakecommitsha",
             },
             built=True,
+            study_type=StudyType.get_ember_frame_player(),
         )
         self.study.admin_group.user_set.add(self.study_admin)
         self.study.design_group.user_set.add(self.study_designer)

@@ -27,7 +27,12 @@ from accounts.models import Child, DemographicData, User
 from attachment_helpers import get_download_url
 from project import settings
 from studies import workflow
-from studies.helpers import FrameActionDispatcher, send_mail
+from studies.helpers import (
+    FrameActionDispatcher,
+    ResponseEligibility,
+    get_eligibility_for_response,
+    send_mail,
+)
 from studies.permissions import (
     UMBRELLA_LAB_PERMISSION_MAP,
     LabGroup,
@@ -227,6 +232,7 @@ def notify_lab_of_approval(sender, instance, **kwargs):
 class StudyTypeEnum(Enum):
     external = "External Study (Choose this if you are posting a study link rather using an experiment builder)"
     ember_frame_player = "Lookit/Ember Frame Player (Default experiment builder)"
+    jspsych = "jsPsych"
 
 
 class StudyType(models.Model):
@@ -241,11 +247,15 @@ class StudyType(models.Model):
 
     @property
     def is_ember_frame_player(self):
-        return self.name == StudyTypeEnum.ember_frame_player.value
+        return self.id == 1
 
     @property
     def is_external(self):
-        return self.name == StudyTypeEnum.external.value
+        return self.id == 2
+
+    @property
+    def is_jspsych(self):
+        return self.id == 3
 
     @property
     def display_name(self):
@@ -262,13 +272,16 @@ class StudyType(models.Model):
     def get_external(cls):
         return cls.objects.get(id=2)
 
+    @classmethod
+    def get_jspsych(cls):
+        return cls.objects.get(id=3)
+
 
 def default_study_structure():
     return {"frames": {}, "sequence": []}
 
 
 class Study(models.Model):
-
     MONITORING_FIELDS = [
         "structure",
         "generator",
@@ -346,7 +359,7 @@ class Study(models.Model):
     built = models.BooleanField(default=False)
     is_building = models.BooleanField(default=False)
     compensation_description = models.TextField(blank=True)
-    criteria_expression = models.TextField(blank=True)
+    criteria_expression = models.TextField(blank=True, default="")
     must_have_participated = models.ManyToManyField(
         "self", blank=True, symmetrical=False, related_name="expected_participation"
     )
@@ -415,7 +428,6 @@ class Study(models.Model):
         return None
 
     def __init__(self, *args, **kwargs):
-
         super(Study, self).__init__(*args, **kwargs)
         self.machine = Machine(
             self,
@@ -585,6 +597,10 @@ class Study(models.Model):
         return self.study_type.is_external and self.metadata["scheduled"]
 
     @property
+    def show_study_link(self):
+        return not self.study_type.is_ember_frame_player or self.built
+
+    @property
     def days_submitted(self):
         if self.status_change_date:
             return (timezone.now() - self.status_change_date).days
@@ -648,7 +664,6 @@ class Study(models.Model):
         )
 
     def notify_submitter_of_approval(self, ev):
-
         context = {
             "study_name": self.name,
             "study_id": self.pk,
@@ -822,6 +837,7 @@ class Study(models.Model):
                 "response__date_created",
                 "response__completed",
                 "response__withdrawn",
+                "response__eligibility",
                 "response__parent_feedback",
                 "response__birthdate_difference",
                 "response__video_privacy",
@@ -846,6 +862,7 @@ class Study(models.Model):
                 "response__id",
                 "response__uuid",
                 "response__date_created",
+                "response__eligibility",
                 "response__parent_feedback",
                 "response__birthdate_difference",
                 "response__databrary",
@@ -979,6 +996,7 @@ class Response(models.Model):
     )  # Integrity constraints will also prevent deleting study that has responses
     completed = models.BooleanField(default=False)
     completed_consent_frame = models.BooleanField(default=False)
+    survey_consent = models.BooleanField(default=False)
     exp_data = models.JSONField(default=dict)
     conditions = models.JSONField(default=dict)
     sequence = ArrayField(models.CharField(max_length=128), blank=True, default=list)
@@ -1000,6 +1018,11 @@ class Response(models.Model):
         StudyType, on_delete=models.PROTECT, default=StudyType.default_pk
     )
     recording_method = models.CharField(max_length=50, default="pipe")
+    eligibility = ArrayField(
+        models.CharField(max_length=100, choices=ResponseEligibility.choices),
+        blank=True,
+        default=list,
+    )
 
     def __str__(self):
         return self.display_name
@@ -1187,6 +1210,13 @@ class Response(models.Model):
                         seen_ids.add(video_id)
 
         return Video.objects.bulk_create(video_objects)
+
+    def save(self, *args, **kwargs):
+        """Override save to set eligibility value"""
+        if self._state.adding is True:
+            # only set the eligibility value when the response is first being created, not when it is being updated later
+            self.eligibility = get_eligibility_for_response(self.child, self.study)
+        super(Response, self).save(*args, **kwargs)
 
 
 @receiver(post_save, sender=Response)

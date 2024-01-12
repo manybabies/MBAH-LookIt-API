@@ -123,6 +123,7 @@ class ResponseSerializer(UuidHyperlinkedModelSerializer):
             "user",
             "study",
             "completed_consent_frame",
+            "survey_consent",
             "demographic_snapshot",
             "created_on",
             "is_preview",
@@ -130,6 +131,7 @@ class ResponseSerializer(UuidHyperlinkedModelSerializer):
             "withdrawn",
             "hash_child_id",
             "recording_method",
+            "eligibility",
         )
 
     def get_hash_child_id(self, obj):
@@ -176,10 +178,12 @@ class ResponseWriteableSerializer(UuidResourceModelSerializer):
             "child",
             "study",
             "completed_consent_frame",
+            "survey_consent",
             "is_preview",
             "pk",
             "withdrawn",
             "recording_method",
+            "eligibility",
         )
 
 

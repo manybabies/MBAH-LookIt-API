@@ -1,3 +1,4 @@
+import datetime
 from unittest.mock import MagicMock, PropertyMock, patch
 from urllib.parse import parse_qs, urlparse
 
@@ -179,7 +180,9 @@ class ExternalStudiesViewTestCase(ExternalTestCase):
         user = User.objects.create()
 
         # Create child
-        child = Child.objects.create(user=user)
+        child = Child.objects.create(
+            user=user, birthday=datetime.date.today() - datetime.timedelta(days=365)
+        )
 
         study_type = StudyType.get_external()
 
@@ -270,7 +273,9 @@ class StudiesHistoryViewTestCase(ExternalTestCase):
         type(mock_request).user = PropertyMock(return_value=user)
 
         # Create child
-        child = Child.objects.create(user=user)
+        child = Child.objects.create(
+            user=user, birthday=datetime.date.today() - datetime.timedelta(days=365)
+        )
 
         # Create response for this child/study
         Response.objects.create(
@@ -305,11 +310,12 @@ class StudiesHistoryViewTestCase(ExternalTestCase):
 
         user = G(User)
         child = G(Child, user=user)
-        response = G(Response, child=child)
+        study = G(Study, study_type=StudyType.get_ember_frame_player())
+        response = G(Response, child=child, study=study)
 
         other_user = G(User)
         other_child = G(Child, user=other_user)
-        G(Response, child=other_child)
+        G(Response, child=other_child, study=study)
 
         type(mock_request).user = PropertyMock(return_value=user)
         view = StudiesHistoryView()
@@ -324,7 +330,7 @@ class StudiesHistoryViewTestCase(ExternalTestCase):
 class ExternalResponseTestCase(TestCase):
     def test_create_external_response(self):
         child = G(Child)
-        study = G(Study)
+        study = G(Study, study_type=StudyType.get_external())
         response = create_external_response(study, child.uuid)
 
         # Verify response was created correctly
@@ -339,8 +345,9 @@ class ExternalResponseTestCase(TestCase):
 
     def test_get_external_url(self):
         url = "https://lookit.mit.edu/"
-        study = G(Study, metadata={"url": url})
-        response = G(Response)
+        study = G(Study, metadata={"url": url}, study_type=StudyType.get_external())
+        child = G(Child)
+        response = G(Response, child=child, study=study)
         external_url = get_external_url(study, response)
         parsed = urlparse(external_url)
         self.assertEqual(f"{parsed.scheme}://{parsed.netloc}{parsed.path}", url)

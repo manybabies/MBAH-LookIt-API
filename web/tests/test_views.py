@@ -592,7 +592,9 @@ class StudiesListViewTestCase(TestCase):
         user = User.objects.create()
 
         # Create child
-        child = Child.objects.create(user=user)
+        child = Child.objects.create(
+            user=user, birthday=datetime.date.today() - datetime.timedelta(days=365)
+        )
 
         study_type = StudyType.get_ember_frame_player()
 
@@ -758,7 +760,7 @@ class ExperimentProxyViewTestCase(TestCase):
         self.other_child = G(Child)
 
         # Some study
-        self.study = G(Study)
+        self.study = G(Study, study_type=StudyType.get_ember_frame_player())
         self.study_url = reverse(
             "web:experiment-proxy",
             kwargs={"uuid": self.study.uuid, "child_id": self.child.uuid},
