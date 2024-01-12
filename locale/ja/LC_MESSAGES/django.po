@@ -2287,7 +2287,7 @@ msgstr "\n"
 
 #: web/templates/web/faq.html:745
 msgid "Visit our"
-msgstr "NO NEED TO TRANSLATE"
+msgstr "&nbsp;"
 
 #: web/templates/web/faq.html:747
 msgid "for a complete guide to posting your studies on Children Helping Science!"
